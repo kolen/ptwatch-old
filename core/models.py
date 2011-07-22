@@ -2,13 +2,13 @@ from django.db import models
 import reversion
 
 class RouteMaster(models.Model):
-    ref = models.CharField(max_length=64)
-    name = models.CharField(max_length=128)
-    osm_ref = models.CharField(max_length=64)
-    osm_name = models.CharField(max_length=128)
-    osm_operator = models.CharField(max_length=255)
-    osm_colour = models.CharField(max_length=32)
-    osm_relation_id = models.BigIntegerField(null=True)
+    ref = models.CharField(max_length=64, blank=True)
+    name = models.CharField(max_length=128, blank=True)
+    osm_ref = models.CharField(max_length=64, blank=True)
+    osm_name = models.CharField(max_length=128, blank=True)
+    osm_operator = models.CharField(max_length=255, blank=True)
+    osm_colour = models.CharField(max_length=32, blank=True)
+    osm_relation_id = models.BigIntegerField(null=True, blank=True)
 
 reversion.register(RouteMaster, fields=["ref", "name"])
 
@@ -19,13 +19,14 @@ class RouteOsmStop(models.Model):
     matched_listed_stop = models.ForeignKey("ListedStop")
 
 class Route(models.Model):
-    ref = models.CharField(max_length=64)
-    name = models.CharField(max_length=128)
-    osm_ref = models.CharField(max_length=64)
-    osm_name = models.CharField(max_length=128)
-    osm_operator = models.CharField(max_length=255) 
-    osm_colour = models.CharField(max_length=32)
-    osm_relation_id = models.BigIntegerField(null=True)
+    master = models.ForeignKey(RouteMaster, null=True, blank=True)
+    ref = models.CharField(max_length=64, blank=True)
+    name = models.CharField(max_length=128, blank=True)
+    osm_ref = models.CharField(max_length=64, blank=True)
+    osm_name = models.CharField(max_length=128, blank=True)
+    osm_operator = models.CharField(max_length=255, blank=True) 
+    osm_colour = models.CharField(max_length=32, blank=True)
+    osm_relation_id = models.BigIntegerField(null=True, blank=True)
     is_vintage = models.BooleanField()
     osm_stops = models.ManyToManyField("OsmStop", through="RouteOsmStop")
 
@@ -39,6 +40,6 @@ class OsmStop(models.Model):
 class ListedStop(models.Model):
     route = models.ForeignKey(Route)
     order = models.PositiveSmallIntegerField()
-    name = models.CharField(max_length=128)
+    name = models.CharField(max_length=128, blank=True)
     
 reversion.register(ListedStop)
