@@ -29,6 +29,7 @@ class Route(models.Model):
     osm_colour = models.CharField(max_length=32, blank=True)
     osm_relation_id = models.BigIntegerField(null=True, blank=True)
     is_vintage = models.BooleanField()
+    is_not_found_in_osm = models.BooleanField()
     osm_stops = models.ManyToManyField("OsmStop", through="RouteOsmStop")
 
 reversion.register(Route, fields=["ref", "name"])
