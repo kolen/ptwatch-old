@@ -45,74 +45,74 @@ from django.db import models
 #    class Meta:
 #        db_table = u'schema_info'
 
-class User(models.Model):
-    id = models.IntegerField(primary_key=True)
-    name = models.TextField()
-    class Meta:
-        db_table = u'users'
-
-class Node(models.Model):
-    id = models.BigIntegerField(primary_key=True)
-    version = models.IntegerField()
-    user = models.ForeignKey(User)
-    tstamp = models.DateTimeField()
-    changeset_id = models.BigIntegerField()
-    geom = models.TextField() # This field type is a guess.
-    class Meta:
-        db_table = u'nodes'
-
-class NodeTag(models.Model):
-    node_id = models.ForeignKey(Node)
-    k = models.TextField()
-    v = models.TextField()
-    class Meta:
-        db_table = u'node_tags'
-
-class Way(models.Model):
-    id = models.BigIntegerField(primary_key=True)
-    version = models.IntegerField()
-    user = models.ForeignKey(User)
-    tstamp = models.DateTimeField()
-    changeset_id = models.BigIntegerField()
-    class Meta:
-        db_table = u'ways'
-
-class WayNode(models.Model):
-    way_id = models.ForeignKey(Way)
-    node_id = models.ForeignKey(Node)
-    sequence_id = models.IntegerField()
-    class Meta:
-        db_table = u'way_nodes'
-
-class WayTag(models.Model):
-    way_id = models.ForeignKey(Way)
-    k = models.TextField()
-    v = models.TextField()
-    class Meta:
-        db_table = u'way_tags'
-
-class Relation(models.Model):
-    id = models.BigIntegerField(primary_key=True)
-    version = models.IntegerField()
-    user = models.ForeignKey(User)
-    tstamp = models.DateTimeField()
-    changeset_id = models.BigIntegerField()
-    class Meta:
-        db_table = u'relations'
-
-class RelationMember(models.Model):
-    relation_id = models.BigIntegerField()
-    member_id = models.BigIntegerField()
-    member_type = models.TextField() # This field type is a guess.
-    member_role = models.TextField()
-    sequence_id = models.IntegerField()
-    class Meta:
-        db_table = u'relation_members'
-
-class RelationTag(models.Model):
-    relation_id = models.ForeignKey(Relation, related_name='tags')
-    k = models.TextField()
-    v = models.TextField()
-    class Meta:
-        db_table = u'relation_tags'
+#class User(models.Model):
+#    id = models.IntegerField(primary_key=True)
+#    name = models.TextField()
+#    class Meta:
+#        db_table = u'users'
+#
+#class Node(models.Model):
+#    id = models.BigIntegerField(primary_key=True)
+#    version = models.IntegerField()
+#    user = models.ForeignKey(User)
+#    tstamp = models.DateTimeField()
+#    changeset_id = models.BigIntegerField()
+#    geom = models.TextField() # This field type is a guess.
+#    class Meta:
+#        db_table = u'nodes'
+#
+#class NodeTag(models.Model):
+#    node_id = models.ForeignKey(Node)
+#    k = models.TextField()
+#    v = models.TextField()
+#    class Meta:
+#        db_table = u'node_tags'
+#
+#class Way(models.Model):
+#    id = models.BigIntegerField(primary_key=True)
+#    version = models.IntegerField()
+#    user = models.ForeignKey(User)
+#    tstamp = models.DateTimeField()
+#    changeset_id = models.BigIntegerField()
+#    class Meta:
+#        db_table = u'ways'
+#
+#class WayNode(models.Model):
+#    way_id = models.ForeignKey(Way)
+#    node_id = models.ForeignKey(Node)
+#    sequence_id = models.IntegerField()
+#    class Meta:
+#        db_table = u'way_nodes'
+#
+#class WayTag(models.Model):
+#    way_id = models.ForeignKey(Way)
+#    k = models.TextField()
+#    v = models.TextField()
+#    class Meta:
+#        db_table = u'way_tags'
+#
+#class Relation(models.Model):
+#    id = models.BigIntegerField(primary_key=True)
+#    version = models.IntegerField()
+#    user = models.ForeignKey(User)
+#    tstamp = models.DateTimeField()
+#    changeset_id = models.BigIntegerField()
+#    class Meta:
+#        db_table = u'relations'
+#
+#class RelationMember(models.Model):
+#    relation_id = models.BigIntegerField()
+#    member_id = models.BigIntegerField()
+#    member_type = models.TextField() # This field type is a guess.
+#    member_role = models.TextField()
+#    sequence_id = models.IntegerField()
+#    class Meta:
+#        db_table = u'relation_members'
+#
+#class RelationTag(models.Model):
+#    relation_id = models.ForeignKey(Relation, related_name='tags')
+#    k = models.TextField()
+#    v = models.TextField()
+#    class Meta:
+#        db_table = u'relation_tags'
 
