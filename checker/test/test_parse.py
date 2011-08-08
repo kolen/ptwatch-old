@@ -21,8 +21,8 @@ class TestParse(unittest.TestCase):
             "addr:postcode": "424005",
             "cladr:code": "12000001000014100",
             "cladr:name": u"Карла Либкнехта",
-            "cladr:suffix": "Улица",
+            "cladr:suffix": u"Улица",
             "highway": "tertiary",
-            "name": "улица Карла Либкнехта",
+            "name": u"улица Карла Либкнехта",
             "trolley_wire": "yes",
-        }, w)
+        }, w.tags)
