@@ -59,17 +59,14 @@ class Checker:
         stop, platform = None, None
         found_ways = False
 
-        def save_pair():
-            check.stops_platforms.append(stop, platform)
-            stop, platform = None, None
-
-        for role, member in osm_relation.members:
+        for role, member in check.osm_relation.members:
             if found_ways and role != "":
                 check.add_error("TYPE_WRONG_SORTING")
 
             if role in ("stop", "stop_exit_only", "stop_entry_only"):
                 if stop:
-                    save_pair()
+                    check.stops_platforms.append((stop, platform))
+                    stop, platform = None, None
                     check.add_error("TYPE_NO_PLATFORM_FOR_STOP")
                 stop = Stop(member)
             elif role in ("platform", "platform_exit_only", "platform_entry_only"):
@@ -77,7 +74,8 @@ class Checker:
                     check.add_error("TYPE_EXTRA_PLATFORM_FOR_STOP")
                 else:
                     platform = Platform(member)
-                    save_pair()
+                    check.stops_platforms.append((stop, platform))
+                    stop, platform = None, None
             elif role == "":
                 if not found_ways:
                     found_ways = True
