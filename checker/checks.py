@@ -60,13 +60,24 @@ def check_ways(check):
 
             last_end_2 = None
 
+    last_error = False
     for way, direction, breac in wdb:
+        if last_error:
+            last_error = False
+            e = check.add_error("TOPO_BROKEN_ROUTE")
+            if direction == "forward":
+                e.broken_nodes.append(way.nodes[0])
+            elif direction == "backward":
+                e.broken_nodes.append(way.nodes[-1])
+
         if breac:
             e = check.add_error("TOPO_BROKEN_ROUTE")
             if direction == "forward":
                 e.broken_nodes.append(way.nodes[-1])
+                last_error = True
             elif direction == "backward":
                 e.broken_nodes.append(way.nodes[0])
+                last_error = True
             else:
                 e.broken_nodes.append(way.nodes[0])
                 e.broken_nodes.append(way.nodes[-1])
