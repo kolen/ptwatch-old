@@ -34,7 +34,8 @@ class Handler(ContentHandler):
             self.store.add_relation(*self.obj)
 
 class Object:
-    pass
+    def __repr__(self):
+        return "<OSM %s id=%s>" % (self.type, self.id)
 
 class Node(Object):
     __slots__ = ["id", "tags", "lat", "lon"]
