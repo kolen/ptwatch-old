@@ -52,7 +52,7 @@ def check_ways(check):
                         last_end_2 = None
                         continue
                     else:
-                        wdb[-1][2] = True
+                        wdb[-2][2] = True
                         last_end = None
                         last_end_2 = None
 
