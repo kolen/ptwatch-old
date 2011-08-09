@@ -19,7 +19,7 @@ class RouteOsmStop(models.Model):
     matched_listed_stop = models.CharField(max_length=128, null=True, blank=True)
 
 class Route(models.Model):
-    master = models.ForeignKey(RouteMaster, null=True, blank=True)
+    master = models.ForeignKey(RouteMaster)
     ref = models.CharField(max_length=64, blank=True)
     name = models.CharField(max_length=128, blank=True)
     stops_listed = models.TextField()

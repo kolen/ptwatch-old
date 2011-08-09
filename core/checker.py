@@ -1,18 +1,19 @@
 
-from osm.models import Relation
 from django.db import connections, transaction
 
-def _osm_get_tags(osm_id, osm_type):
+def osm_get_tags(osm_id, osm_type):
     if osm_type not in ["node", "way", "relation"]:
         raise TypeError("osm_type can be only node, way or relation")
 
     c = connections['osm'].cursor()
-    c.execute("select * from %s_tags where %s_id = %%s" % (osm_type, osm_type), [osm_id])
+    c.execute("select k, v from %s_tags where %s_id = %%s" % (osm_type, osm_type), [osm_id])
+    result = c.fetchall()
+    print result
     return dict(
-        (row['k'], row['v'])
-        for row in c.fetchall())
+        (row[0], row[1])
+        for row in result)
 
-def _route_clear_osm_data(route):
+def route_clear_osm_data(route):
     route.osm_ref = ""
     route.osm_name = ""
     route.osm_operator = ""
@@ -21,7 +22,7 @@ def _route_clear_osm_data(route):
     route.is_vintage = False
     route.osm_stops = []
 
-def _route_fill_osm_tags(route, tags):
+def route_fill_osm_tags(route, tags):
     # TODO: validate
     route.osm_ref = tags.get('ref', '')
     route.osm_name = tags.get('name', '')
@@ -34,17 +35,17 @@ def route_update_check_data(route):
     """
 
     if not route.osm_relation_id:
-        _route_clear_osm_data(route)
+        route_clear_osm_data(route)
         route.save()
         return
 
     c = connections['osm'].cursor()
-    c.execute("select * from relation where id=%s", [route.osm_relation_id])
+    c.execute("select * from relations where id=%s", [route.osm_relation_id])
     osm_relation = c.fetchone()
     if not osm_relation:
-        _route_clear_osm_data(route)
+        route_clear_osm_data(route)
         route.is_not_found_in_osm = True
         route.save()
 
-    osm_relation_tags = _osm_get_tags(route.osm_relation_id, 'relation')
-    _route_fill_osm_tags(route, osm_relation_tags)
+    osm_relation_tags = osm_get_tags(route.osm_relation_id, 'relation')
+    route_fill_osm_tags(route, osm_relation_tags)
