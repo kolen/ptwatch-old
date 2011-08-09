@@ -34,6 +34,9 @@ class TopoOnewayWrongDirection(Error):
     def __init__(self):
         self.wrong_direction_ways = []
 
+    def __repr__(self):
+        return "<TopoBrokenRoute ways=%s>" % ",".join(str(node.id) for node in self.wrong_direction_ways)
+
 class TypeNoPlatformForStop(Error):
     title = "Stop have no platform"
     severity = "error"
