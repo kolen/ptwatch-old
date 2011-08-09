@@ -53,6 +53,8 @@ def check_ways(check):
                         continue
                     else:
                         wdb[-1][2] = True
+                        last_end = None
+                        last_end_2 = None
 
                 break
 
