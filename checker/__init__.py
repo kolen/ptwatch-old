@@ -1,5 +1,6 @@
 
 import errors
+import checks
 
 class Results:
     """
@@ -9,7 +10,7 @@ class Results:
      - stops_platforms_trals: list of pairs (stop, platform, trail) of route
     """
     def __init__(self):
-        self.errors = set()
+        self.errors = {}
         self.stops_platforms_trals = []
 
 class Stop:
@@ -20,23 +21,26 @@ class Platform:
     def __init__(self, osm_platform):
         self.osm_platform = osm_platform
 
+class Trail:
+    def __init__(self):
+        pass
+
 class Check:
     def __init__(self, osm_relation, stops_reference, route_type):
         self.osm_relation = osm_relation
         self.stops_reference = stops_reference
         self.route_type = route_type
         self.stops_platforms = []
+        self.ways_directions_breaks = [] # (way, direction, break_after)
         self.results = Results()
 
-        self._errors = {}
-
     def add_error(self, error_type):
-        if error_type not in self._errors:
+        if error_type not in self.results.errors:
             error = errors.errors[error_type]()
-            self.results.errors.add(error)
+            self.results.errors[error_type] = error
             return error
         else:
-            return self._errors[error_type]
+            return self.results.errors[error_type]
 
 class Checker:
     @staticmethod
@@ -51,6 +55,9 @@ class Checker:
         check = Check(osm_relation, stops_reference, route_type)
         Checker._get_stops(check)
         Checker._generate_stops_platforms_trails(check)
+
+        for c in checks.checks:
+            c(check)
 
         return check.results
 
@@ -81,6 +88,7 @@ class Checker:
                     found_ways = True
             else:
                 check.add_error("TYPE_WRONG_ROLE")
+
 
     @staticmethod
     def _generate_stops_platforms_trails(check):
