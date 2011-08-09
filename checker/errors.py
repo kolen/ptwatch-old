@@ -14,24 +14,44 @@ class Error():
     __metaclass__ = ErrorMetaclass
 
 class TopoNoWays(Error):
-    descr = "No ways"
-    severity = "critical"
-
-class TopoBrokenRoute(Error):
-    descr = "Broken route"
+    title = "No ways"
     severity = "error"
 
+class TopoBrokenRoute(Error):
+    title = "Broken route"
+    severity = "error"
+
+    def __init__(self):
+        self.broken_nodes = []
+
+    def __repr__(self):
+        return "<TopoBrokenRoute nodes=%s>" % ",".join(str(node.id) for node in self.broken_nodes)
+
+class TopoOnewayWrongDirection(Error):
+    title = "Route on one-way segments in opposite direction"
+    severity = "error"
+
+    def __init__(self):
+        self.wrong_direction_ways = []
+
 class TypeNoPlatformForStop(Error):
-    descr = "Stop have no platform"
+    title = "Stop have no platform"
     severity = "error"
 
 class TypeWrongSorting(Error):
-    descr = "Wrong sorting"
+    title = "Wrong sorting"
     severity = "error"
 
 class TypeWrongRole(Error):
-    descr = "Wrong role"
+    title = "Wrong role"
     severity = "error"
+
+class TypeWrongObject(Error):
+    title = "Wrong object"
+    severity = "error"
+
+    def __init__(self):
+        self.objects = []
 
 errors = dict((cls.name, cls)
     for clsname, cls in inspect.getmembers(sys.modules[__name__],
