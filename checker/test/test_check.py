@@ -16,3 +16,11 @@ class TestCheck(TestCase):
         data = load(self.TEST_RESOURCES_DIR+"/yoshkar-ola_1_oneway_fixed.osm")
         results = checker.Checker.check_route_variant(data[2][380499], [], "bus")
         self.assertEquals({}, results.errors)
+
+    def testRoute380499Broken(self):
+        data = load(self.TEST_RESOURCES_DIR+"/route_380499_broken.osm")
+        results = checker.Checker.check_route_variant(data[2][380499], [], "bus")
+        self.assertEquals(["TOPO_BROKEN_ROUTE"], results.errors.keys())
+        self.assertEquals([
+            324160729L, 335945606L, 635942387L, -1286L, 324169952L, 335945607L,
+            ], [e.id for e in results.errors["TOPO_BROKEN_ROUTE"].broken_nodes])

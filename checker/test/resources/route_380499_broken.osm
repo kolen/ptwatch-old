@@ -1,0 +1,1567 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<osm version='0.6' generator='JOSM'>
+  <node id='-1288' visible='true' lat='56.63538424956227' lon='47.85191632438705' />
+  <node id='-1286' visible='true' lat='56.623520963627485' lon='47.93250459304872' />
+  <node id='-1284' visible='true' lat='56.62360980540707' lon='47.93180851465701' />
+  <node id='295855545' timestamp='2010-11-04T13:44:05Z' uid='261173' user='12rus' visible='true' version='13' changeset='6288618' lat='56.6266973' lon='47.9112128' />
+  <node id='295855546' timestamp='2011-05-26T10:48:49Z' uid='149810' user='AnyX' visible='true' version='15' changeset='8252379' lat='56.6269164' lon='47.9082931'>
+    <tag k='highway' v='traffic_signals' />
+  </node>
+  <node id='295855556' timestamp='2010-04-15T17:33:11Z' uid='235335' user='Art&apos;y' visible='true' version='7' changeset='4432593' lat='56.627985' lon='47.9035506' />
+  <node id='295855566' timestamp='2011-01-08T15:03:39Z' uid='235335' user='Art&apos;y' visible='true' version='8' changeset='6904682' lat='56.6282208' lon='47.9000009' />
+  <node id='295855575' timestamp='2010-04-20T19:19:24Z' uid='235335' user='Art&apos;y' visible='true' version='11' changeset='4480629' lat='56.6253865' lon='47.8935501' />
+  <node id='295855576' timestamp='2011-01-08T15:05:04Z' uid='235335' user='Art&apos;y' visible='true' version='10' changeset='6904682' lat='56.6248262' lon='47.8930539' />
+  <node id='295855577' timestamp='2011-01-08T15:04:10Z' uid='235335' user='Art&apos;y' visible='true' version='10' changeset='6904682' lat='56.6244821' lon='47.8924766' />
+  <node id='295855578' timestamp='2011-01-08T15:04:43Z' uid='235335' user='Art&apos;y' visible='true' version='11' changeset='6904682' lat='56.6240466' lon='47.8913988' />
+  <node id='295855581' timestamp='2010-04-17T09:43:15Z' uid='235335' user='Art&apos;y' visible='true' version='6' changeset='4445966' lat='56.6226952' lon='47.8884838' />
+  <node id='295855593' timestamp='2010-04-18T15:44:05Z' uid='261173' user='12rus' visible='true' version='12' changeset='4458922' lat='56.6228317' lon='47.8887058' />
+  <node id='295855615' timestamp='2011-01-08T15:03:11Z' uid='235335' user='Art&apos;y' visible='true' version='8' changeset='6904682' lat='56.6237279' lon='47.8906023' />
+  <node id='323904553' timestamp='2011-07-30T06:37:00Z' uid='437435' user='Jenya' visible='true' version='8' changeset='8869338' lat='56.6457022' lon='47.8707843' />
+  <node id='323904559' timestamp='2011-07-30T06:37:00Z' uid='437435' user='Jenya' visible='true' version='7' changeset='8869338' lat='56.6461227' lon='47.8686737' />
+  <node id='323904563' timestamp='2011-07-30T06:37:00Z' uid='437435' user='Jenya' visible='true' version='7' changeset='8869338' lat='56.6463687' lon='47.8667654' />
+  <node id='323904576' timestamp='2011-07-30T06:36:58Z' uid='437435' user='Jenya' visible='true' version='10' changeset='8869338' lat='56.6460407' lon='47.8616683' />
+  <node id='323936685' timestamp='2010-05-15T12:35:48Z' uid='261173' user='12rus' visible='true' version='16' changeset='4705733' lat='56.6289398' lon='47.8459052' />
+  <node id='323947563' timestamp='2010-05-18T16:46:19Z' uid='261173' user='12rus' visible='true' version='21' changeset='4740353' lat='56.6252395' lon='47.9255733' />
+  <node id='324160684' timestamp='2011-07-30T06:36:58Z' uid='437435' user='Jenya' visible='true' version='6' changeset='8869338' lat='56.6444773' lon='47.8574325' />
+  <node id='324160685' timestamp='2011-07-30T06:36:59Z' uid='437435' user='Jenya' visible='true' version='6' changeset='8869338' lat='56.6442928' lon='47.8573559' />
+  <node id='324160687' timestamp='2011-07-30T06:36:58Z' uid='437435' user='Jenya' visible='true' version='8' changeset='8869338' lat='56.6441638' lon='47.8566031' />
+  <node id='324160729' timestamp='2010-08-04T11:28:26Z' uid='327177' user='wec' visible='true' version='17' changeset='5398177' lat='56.6402745' lon='47.8317441'>
+    <tag k='highway' v='traffic_signals' />
+  </node>
+  <node id='324163048' timestamp='2011-07-30T06:36:57Z' uid='437435' user='Jenya' visible='true' version='11' changeset='8869338' lat='56.6463537' lon='47.8648207'>
+    <tag k='highway' v='traffic_signals' />
+  </node>
+  <node id='324169712' timestamp='2010-04-27T05:43:23Z' uid='235335' user='Art&apos;y' visible='true' version='9' changeset='4538147' lat='56.6387746' lon='47.8324624' />
+  <node id='324169723' timestamp='2010-04-18T14:10:03Z' uid='261173' user='12rus' visible='true' version='8' changeset='4458041' lat='56.6393166' lon='47.8319717' />
+  <node id='324169732' timestamp='2010-04-27T05:43:18Z' uid='235335' user='Art&apos;y' visible='true' version='10' changeset='4538147' lat='56.6398682' lon='47.8318024' />
+  <node id='324169952' timestamp='2011-03-28T12:48:05Z' uid='427619' user='BIT' visible='true' version='18' changeset='7696308' lat='56.636611' lon='47.8642132' />
+  <node id='324169960' timestamp='2010-04-23T19:56:28Z' uid='235335' user='Art&apos;y' visible='true' version='8' changeset='4506744' lat='56.6302259' lon='47.8726962' />
+  <node id='324177163' timestamp='2011-07-30T06:37:01Z' uid='437435' user='Jenya' visible='true' version='12' changeset='8869338' lat='56.6234868' lon='47.884441'>
+    <tag k='crossing' v='traffic_signals' />
+    <tag k='highway' v='traffic_signals' />
+  </node>
+  <node id='324177166' timestamp='2010-08-04T11:21:53Z' uid='327177' user='wec' visible='true' version='19' changeset='5398123' lat='56.6292169' lon='47.8959779'>
+    <tag k='highway' v='traffic_signals' />
+  </node>
+  <node id='324177174' timestamp='2010-05-01T19:41:49Z' uid='235335' user='Art&apos;y' visible='true' version='7' changeset='4578678' lat='56.6279448' lon='47.9011379' />
+  <node id='324177177' timestamp='2010-11-04T13:44:05Z' uid='261173' user='12rus' visible='true' version='13' changeset='6288618' lat='56.6270484' lon='47.9070982' />
+  <node id='324178964' timestamp='2011-07-30T06:37:01Z' uid='437435' user='Jenya' visible='true' version='16' changeset='8869338' lat='56.6245746' lon='47.8829702' />
+  <node id='324369779' timestamp='2011-01-08T15:02:46Z' uid='235335' user='Art&apos;y' visible='true' version='16' changeset='6904682' lat='56.6274653' lon='47.8948068' />
+  <node id='324377268' timestamp='2011-01-09T20:26:49Z' uid='235335' user='Art&apos;y' visible='true' version='17' changeset='6920249' lat='56.6337971' lon='47.931147'>
+    <tag k='highway' v='traffic_signals' />
+  </node>
+  <node id='324379478' timestamp='2011-07-30T06:36:58Z' uid='437435' user='Jenya' visible='true' version='9' changeset='8869338' lat='56.6461301' lon='47.8621004' />
+  <node id='324393853' timestamp='2010-04-20T08:53:09Z' uid='235335' user='Art&apos;y' visible='true' version='15' changeset='4475328' lat='56.6370188' lon='47.9362228' />
+  <node id='324393854' timestamp='2010-04-20T08:53:09Z' uid='235335' user='Art&apos;y' visible='true' version='12' changeset='4475328' lat='56.6360315' lon='47.9387263' />
+  <node id='324393860' timestamp='2010-04-17T19:09:09Z' uid='235335' user='Art&apos;y' visible='true' version='8' changeset='4450972' lat='56.6343581' lon='47.9429268' />
+  <node id='324393864' timestamp='2010-04-17T19:09:09Z' uid='235335' user='Art&apos;y' visible='true' version='8' changeset='4450972' lat='56.6339214' lon='47.9439679' />
+  <node id='324393868' timestamp='2010-04-20T08:53:17Z' uid='235335' user='Art&apos;y' visible='true' version='14' changeset='4475328' lat='56.6320243' lon='47.9487142' />
+  <node id='324628541' timestamp='2010-04-27T05:43:48Z' uid='235335' user='Art&apos;y' visible='true' version='10' changeset='4538147' lat='56.6340158' lon='47.8388838' />
+  <node id='324630648' timestamp='2011-07-18T18:38:26Z' uid='73184' user='kolen' visible='true' version='4' changeset='8761431' lat='56.643972' lon='47.8779061'>
+    <tag k='highway' v='bus_stop' />
+    <tag k='name' v='Университет' />
+  </node>
+  <node id='324658738' timestamp='2011-07-30T06:37:00Z' uid='437435' user='Jenya' visible='true' version='17' changeset='8869338' lat='56.6449653' lon='47.8740818' />
+  <node id='324668446' timestamp='2010-04-27T05:43:53Z' uid='235335' user='Art&apos;y' visible='true' version='11' changeset='4538147' lat='56.6339456' lon='47.8578516' />
+  <node id='324786428' timestamp='2010-04-27T05:43:58Z' uid='235335' user='Art&apos;y' visible='true' version='8' changeset='4538147' lat='56.631119' lon='47.8511065' />
+  <node id='325196157' timestamp='2010-04-18T14:58:59Z' uid='261173' user='12rus' visible='true' version='11' changeset='4458041' lat='56.6288753' lon='47.874989' />
+  <node id='325216060' timestamp='2010-11-15T21:56:29Z' uid='235335' user='Art&apos;y' visible='true' version='11' changeset='6381163' lat='56.6374636' lon='47.8342128' />
+  <node id='325771277' timestamp='2010-04-25T07:52:14Z' uid='235335' user='Art&apos;y' visible='true' version='3' changeset='4518417' lat='56.644054' lon='47.8559777' />
+  <node id='325771301' timestamp='2010-04-25T07:51:59Z' uid='235335' user='Art&apos;y' visible='true' version='7' changeset='4518417' lat='56.6417955' lon='47.8500058' />
+  <node id='326066941' timestamp='2010-04-15T17:32:51Z' uid='235335' user='Art&apos;y' visible='true' version='8' changeset='4432593' lat='56.6286083' lon='47.8983984' />
+  <node id='327531236' timestamp='2010-04-25T07:52:05Z' uid='235335' user='Art&apos;y' visible='true' version='7' changeset='4518417' lat='56.6416448' lon='47.8494894' />
+  <node id='327531339' timestamp='2010-11-15T21:54:21Z' uid='235335' user='Art&apos;y' visible='true' version='13' changeset='6381163' lat='56.6414921' lon='47.844915' />
+  <node id='327531369' timestamp='2011-07-30T06:37:05Z' uid='437435' user='Jenya' visible='true' version='17' changeset='8869338' lat='56.6436899' lon='47.8796054' />
+  <node id='327531384' timestamp='2011-07-30T06:37:05Z' uid='437435' user='Jenya' visible='true' version='27' changeset='8869338' lat='56.6425634' lon='47.885233'>
+    <tag k='highway' v='traffic_signals' />
+  </node>
+  <node id='327531392' timestamp='2011-07-30T06:37:04Z' uid='437435' user='Jenya' visible='true' version='24' changeset='8869338' lat='56.6417614' lon='47.8894646'>
+    <tag k='highway' v='traffic_signals' />
+  </node>
+  <node id='327531402' timestamp='2011-01-08T15:04:17Z' uid='235335' user='Art&apos;y' visible='true' version='22' changeset='6904682' lat='56.6404168' lon='47.8961489' />
+  <node id='335945603' timestamp='2010-04-27T05:43:58Z' uid='235335' user='Art&apos;y' visible='true' version='10' changeset='4538147' lat='56.6361998' lon='47.8632318' />
+  <node id='335945606' timestamp='2010-05-04T04:04:18Z' uid='261173' user='12rus' visible='true' version='13' changeset='4600986' lat='56.6407228' lon='47.8450349' />
+  <node id='335945607' timestamp='2010-04-27T05:43:25Z' uid='235335' user='Art&apos;y' visible='true' version='10' changeset='4538147' lat='56.6317767' lon='47.8526754' />
+  <node id='335947865' timestamp='2010-04-26T21:33:25Z' uid='235335' user='Art&apos;y' visible='true' version='7' changeset='4536571' lat='56.6306353' lon='47.8435635' />
+  <node id='348131007' timestamp='2010-04-15T17:33:10Z' uid='235335' user='Art&apos;y' visible='true' version='5' changeset='4432593' lat='56.6278374' lon='47.9020754' />
+  <node id='348131015' timestamp='2010-04-15T17:33:10Z' uid='235335' user='Art&apos;y' visible='true' version='5' changeset='4432593' lat='56.6278655' lon='47.9026413' />
+  <node id='348131016' timestamp='2010-04-15T17:33:10Z' uid='235335' user='Art&apos;y' visible='true' version='6' changeset='4432593' lat='56.6279142' lon='47.9030893' />
+  <node id='348131037' timestamp='2010-05-15T16:47:14Z' uid='261173' user='12rus' visible='true' version='9' changeset='4708166' lat='56.6277548' lon='47.9042561' />
+  <node id='348131038' timestamp='2010-05-15T16:47:23Z' uid='261173' user='12rus' visible='true' version='8' changeset='4708166' lat='56.6279082' lon='47.9040952' />
+  <node id='348131039' timestamp='2010-05-15T16:47:23Z' uid='261173' user='12rus' visible='true' version='8' changeset='4708166' lat='56.6279613' lon='47.9039611' />
+  <node id='348131040' timestamp='2010-11-04T13:44:05Z' uid='261173' user='12rus' visible='true' version='11' changeset='6288618' lat='56.6272812' lon='47.9053504' />
+  <node id='348131041' timestamp='2010-05-15T16:47:13Z' uid='261173' user='12rus' visible='true' version='7' changeset='4708166' lat='56.627563' lon='47.9044868' />
+  <node id='348131976' timestamp='2011-07-30T06:37:02Z' uid='437435' user='Jenya' visible='true' version='8' changeset='8869338' lat='56.622085' lon='47.8863025'>
+    <tag k='crossing' v='uncontrolled' />
+    <tag k='highway' v='crossing' />
+  </node>
+  <node id='348131977' timestamp='2010-04-18T15:44:05Z' uid='261173' user='12rus' visible='true' version='5' changeset='4458922' lat='56.6224687' lon='47.8881693' />
+  <node id='348131978' timestamp='2010-04-18T15:44:06Z' uid='261173' user='12rus' visible='true' version='6' changeset='4458922' lat='56.6219315' lon='47.8866941' />
+  <node id='350531982' timestamp='2011-07-09T18:31:43Z' uid='73184' user='kolen' visible='true' version='4' changeset='8676986' lat='56.6266641' lon='47.9141395'>
+    <tag k='highway' v='bus_stop' />
+    <tag k='name' v='улица Петрова' />
+  </node>
+  <node id='350532001' timestamp='2011-07-18T18:38:25Z' uid='73184' user='kolen' visible='true' version='2' changeset='8761431' lat='56.6271667' lon='47.90765'>
+    <tag k='highway' v='bus_stop' />
+    <tag k='name' v='Парк им. 400-летия Йошкар-Олы' />
+  </node>
+  <node id='350532029' timestamp='2011-07-18T18:38:27Z' uid='73184' user='kolen' visible='true' version='3' changeset='8761431' lat='56.628324' lon='47.8950892'>
+    <tag k='highway' v='bus_stop' />
+    <tag k='name' v='улица Вашская' />
+  </node>
+  <node id='350532063' timestamp='2011-07-18T18:38:26Z' uid='73184' user='kolen' visible='true' version='2' changeset='8761431' lat='56.6229324' lon='47.8855782'>
+    <tag k='highway' v='bus_stop' />
+    <tag k='name' v='Спорткомплекс &quot;Юбилейный&quot;' />
+  </node>
+  <node id='350532084' timestamp='2011-07-18T18:38:27Z' uid='73184' user='kolen' visible='true' version='3' changeset='8761431' lat='56.6269159' lon='47.8798813'>
+    <tag k='highway' v='bus_stop' />
+    <tag k='name' v='улица Панфилова' />
+  </node>
+  <node id='350532227' timestamp='2011-07-18T18:38:23Z' uid='73184' user='kolen' visible='true' version='3' changeset='8761431' lat='56.6352005' lon='47.9222832'>
+    <tag k='alt_name' v='Айвика' />
+    <tag k='highway' v='bus_stop' />
+    <tag k='name' v='Госархив' />
+  </node>
+  <node id='350532375' timestamp='2011-01-09T20:27:59Z' uid='235335' user='Art&apos;y' visible='true' version='4' changeset='6920249' lat='56.6351351' lon='47.9320464' />
+  <node id='351703095' timestamp='2010-04-15T17:32:51Z' uid='235335' user='Art&apos;y' visible='true' version='9' changeset='4432593' lat='56.6281704' lon='47.8952548' />
+  <node id='351703103' timestamp='2010-04-15T17:32:51Z' uid='235335' user='Art&apos;y' visible='true' version='8' changeset='4432593' lat='56.6288572' lon='47.8957228' />
+  <node id='351703170' timestamp='2010-04-15T17:32:51Z' uid='235335' user='Art&apos;y' visible='true' version='7' changeset='4432593' lat='56.6277322' lon='47.894949' />
+  <node id='351899496' timestamp='2010-04-20T08:52:50Z' uid='235335' user='Art&apos;y' visible='true' version='12' changeset='4475328' lat='56.6355382' lon='47.9210576'>
+    <tag k='highway' v='traffic_signals' />
+  </node>
+  <node id='351899503' timestamp='2010-04-21T08:57:12Z' uid='235335' user='Art&apos;y' visible='true' version='15' changeset='4484521' lat='56.6365091' lon='47.9157265' />
+  <node id='351899509' timestamp='2010-04-21T08:57:12Z' uid='235335' user='Art&apos;y' visible='true' version='13' changeset='4484521' lat='56.6366926' lon='47.9146579'>
+    <tag k='highway' v='traffic_signals' />
+  </node>
+  <node id='351899520' timestamp='2011-01-08T15:04:57Z' uid='235335' user='Art&apos;y' visible='true' version='10' changeset='6904682' lat='56.6383469' lon='47.9064309' />
+  <node id='351899525' timestamp='2011-01-08T15:04:40Z' uid='235335' user='Art&apos;y' visible='true' version='11' changeset='6904682' lat='56.6387035' lon='47.9046309' />
+  <node id='351899535' timestamp='2011-01-08T15:02:40Z' uid='235335' user='Art&apos;y' visible='true' version='18' changeset='6904682' lat='56.6390582' lon='47.9028384' />
+  <node id='352809258' timestamp='2010-04-20T08:52:50Z' uid='235335' user='Art&apos;y' visible='true' version='12' changeset='4475328' lat='56.6354888' lon='47.9213261'>
+    <tag k='highway' v='traffic_signals' />
+  </node>
+  <node id='353005154' timestamp='2011-01-08T15:05:05Z' uid='235335' user='Art&apos;y' visible='true' version='11' changeset='6904682' lat='56.6272293' lon='47.9057126' />
+  <node id='353048535' timestamp='2011-07-18T18:38:23Z' uid='73184' user='kolen' visible='true' version='5' changeset='8761431' lat='56.6408573' lon='47.8934715'>
+    <tag k='highway' v='bus_stop' />
+    <tag k='name' v='Дом быта' />
+  </node>
+  <node id='353048538' timestamp='2011-07-18T18:38:23Z' uid='73184' user='kolen' visible='true' version='4' changeset='8761431' lat='56.6392582' lon='47.9015735'>
+    <tag k='alt_name' v='Аптека №1' />
+    <tag k='highway' v='bus_stop' />
+    <tag k='name' v='Вознесенская' />
+  </node>
+  <node id='353048541' timestamp='2011-07-18T18:38:26Z' uid='73184' user='kolen' visible='true' version='5' changeset='8761431' lat='56.6361866' lon='47.916833'>
+    <tag k='highway' v='bus_stop' />
+    <tag k='name' v='Центральный микрорайон' />
+  </node>
+  <node id='353048551' timestamp='2010-04-20T08:53:01Z' uid='235335' user='Art&apos;y' visible='true' version='7' changeset='4475328' lat='56.6350034' lon='47.9239625' />
+  <node id='353048555' timestamp='2010-11-15T21:56:11Z' uid='235335' user='Art&apos;y' visible='true' version='8' changeset='6381163' lat='56.6348586' lon='47.9247393' />
+  <node id='353048569' timestamp='2010-12-09T11:46:30Z' uid='73184' user='kolen' visible='true' version='10' changeset='6593950' lat='56.6345126' lon='47.926591' />
+  <node id='353048590' timestamp='2010-04-20T08:53:02Z' uid='235335' user='Art&apos;y' visible='true' version='8' changeset='4475328' lat='56.6346678' lon='47.9257855'>
+    <tag k='crossing' v='uncontrolled' />
+    <tag k='highway' v='crossing' />
+  </node>
+  <node id='353114109' timestamp='2011-01-08T15:04:19Z' uid='235335' user='Art&apos;y' visible='true' version='19' changeset='6904682' lat='56.6394903' lon='47.900757' />
+  <node id='353114111' timestamp='2011-01-08T07:14:31Z' uid='235335' user='Art&apos;y' visible='true' version='17' changeset='6900485' lat='56.6399855' lon='47.8982966' />
+  <node id='354585191' timestamp='2010-11-04T13:44:05Z' uid='261173' user='12rus' visible='true' version='11' changeset='6288618' lat='56.6268035' lon='47.909421' />
+  <node id='355028911' timestamp='2011-07-18T18:38:26Z' uid='73184' user='kolen' visible='true' version='3' changeset='8761431' lat='56.6376347' lon='47.9091759'>
+    <tag k='highway' v='bus_stop' />
+    <tag k='name' v='Стадион &quot;Электрон&quot;' />
+  </node>
+  <node id='355028912' timestamp='2011-01-08T15:02:45Z' uid='235335' user='Art&apos;y' visible='true' version='11' changeset='6904682' lat='56.6379974' lon='47.908169'>
+    <tag k='crossing' v='uncontrolled' />
+    <tag k='highway' v='crossing' />
+  </node>
+  <node id='355265830' timestamp='2010-05-18T16:46:21Z' uid='261173' user='12rus' visible='true' version='20' changeset='4740353' lat='56.6252926' lon='47.9252997' />
+  <node id='355265843' timestamp='2011-01-09T20:27:40Z' uid='235335' user='Art&apos;y' visible='true' version='11' changeset='6920249' lat='56.6336821' lon='47.9310757'>
+    <tag k='highway' v='traffic_signals' />
+  </node>
+  <node id='355265852' timestamp='2010-04-20T08:52:54Z' uid='235335' user='Art&apos;y' visible='true' version='7' changeset='4475328' lat='56.6339136' lon='47.9298821' />
+  <node id='356864968' timestamp='2011-07-18T18:38:26Z' uid='73184' user='kolen' visible='true' version='2' changeset='8761431' lat='56.6343837' lon='47.9316422'>
+    <tag k='highway' v='bus_stop' />
+    <tag k='name' v='Универсам &quot;Восточный&quot;' />
+  </node>
+  <node id='364338408' timestamp='2011-07-18T18:38:24Z' uid='73184' user='kolen' visible='true' version='7' changeset='8761431' lat='56.6423524' lon='47.8861387'>
+    <tag k='highway' v='bus_stop' />
+    <tag k='name' v='Магазин &quot;Электрон&quot;' />
+  </node>
+  <node id='364350536' timestamp='2010-04-15T17:32:51Z' uid='235335' user='Art&apos;y' visible='true' version='9' changeset='4432593' lat='56.6281741' lon='47.8952561' />
+  <node id='370452809' action='delete' timestamp='2010-04-27T05:43:35Z' uid='235335' user='Art&apos;y' visible='true' version='6' changeset='4538147' lat='56.640452' lon='47.8379759' />
+  <node id='370452817' timestamp='2010-04-27T05:43:15Z' uid='235335' user='Art&apos;y' visible='true' version='8' changeset='4538147' lat='56.6337512' lon='47.8681778' />
+  <node id='370452818' timestamp='2011-07-30T06:37:01Z' uid='437435' user='Jenya' visible='true' version='9' changeset='8869338' lat='56.6266266' lon='47.8801647' />
+  <node id='370591954' timestamp='2011-07-18T18:38:24Z' uid='73184' user='kolen' visible='true' version='2' changeset='8761431' lat='56.6218541' lon='47.9443032'>
+    <tag k='highway' v='bus_stop' />
+    <tag k='name' v='Микрорайон &quot;Нагорный&quot;' />
+  </node>
+  <node id='388341294' timestamp='2010-04-20T08:53:17Z' uid='235335' user='Art&apos;y' visible='true' version='7' changeset='4475328' lat='56.629425' lon='47.947393' />
+  <node id='388341303' timestamp='2011-01-09T20:27:09Z' uid='235335' user='Art&apos;y' visible='true' version='4' changeset='6920249' lat='56.6359137' lon='47.9325699' />
+  <node id='413410370' timestamp='2011-07-30T06:36:58Z' uid='437435' user='Jenya' visible='true' version='10' changeset='8869338' lat='56.6461597' lon='47.8623099' />
+  <node id='413411505' timestamp='2011-07-30T06:36:58Z' uid='437435' user='Jenya' visible='true' version='9' changeset='8869338' lat='56.6455318' lon='47.8599085' />
+  <node id='413454274' timestamp='2011-01-09T20:27:23Z' uid='235335' user='Art&apos;y' visible='true' version='5' changeset='6920249' lat='56.6376202' lon='47.9337171' />
+  <node id='416636331' timestamp='2011-07-30T06:36:58Z' uid='437435' user='Jenya' visible='true' version='8' changeset='8869338' lat='56.6451676' lon='47.8587665' />
+  <node id='581201354' timestamp='2010-04-20T08:53:17Z' uid='235335' user='Art&apos;y' visible='true' version='12' changeset='4475328' lat='56.6326829' lon='47.9471096' />
+  <node id='581201358' timestamp='2010-04-20T08:53:17Z' uid='235335' user='Art&apos;y' visible='true' version='11' changeset='4475328' lat='56.6332153' lon='47.945749' />
+  <node id='595706940' timestamp='2010-11-04T13:44:05Z' uid='261173' user='12rus' visible='true' version='12' changeset='6288618' lat='56.6266176' lon='47.9130796' />
+  <node id='603023898' timestamp='2010-04-27T05:43:55Z' uid='235335' user='Art&apos;y' visible='true' version='9' changeset='4538147' lat='56.6294016' lon='47.8470072' />
+  <node id='603023899' timestamp='2010-04-27T05:43:35Z' uid='235335' user='Art&apos;y' visible='true' version='9' changeset='4538147' lat='56.6298692' lon='47.8481231' />
+  <node id='603023900' timestamp='2010-04-27T05:43:30Z' uid='235335' user='Art&apos;y' visible='true' version='10' changeset='4538147' lat='56.6303051' lon='47.8491634' />
+  <node id='603023901' timestamp='2010-04-27T05:43:58Z' uid='235335' user='Art&apos;y' visible='true' version='8' changeset='4538147' lat='56.6307102' lon='47.8501301' />
+  <node id='603639794' timestamp='2010-04-27T05:43:15Z' uid='235335' user='Art&apos;y' visible='true' version='9' changeset='4538147' lat='56.6322486' lon='47.8538016' />
+  <node id='603639795' timestamp='2010-04-27T05:43:44Z' uid='235335' user='Art&apos;y' visible='true' version='9' changeset='4538147' lat='56.6326779' lon='47.8548261' />
+  <node id='603639796' timestamp='2010-04-27T05:43:38Z' uid='235335' user='Art&apos;y' visible='true' version='10' changeset='4538147' lat='56.6331162' lon='47.8558722' />
+  <node id='605039495' timestamp='2010-04-17T09:43:19Z' uid='235335' user='Art&apos;y' visible='true' version='5' changeset='4445966' lat='56.6331132' lon='47.8688327' />
+  <node id='608586105' timestamp='2011-07-18T18:38:27Z' uid='73184' user='kolen' visible='true' version='5' changeset='8761431' lat='56.6461775' lon='47.8631965'>
+    <tag k='highway' v='bus_stop' />
+    <tag k='name' v='улица Анциферова' />
+  </node>
+  <node id='610488735' timestamp='2011-07-18T18:38:24Z' uid='73184' user='kolen' visible='true' version='6' changeset='8761431' lat='56.6455532' lon='47.8710336'>
+    <tag k='highway' v='bus_stop' />
+    <tag k='name' v='Микрорайон &quot;Гомзово&quot;' />
+    <tag k='note' v='Т:5,6,10 А:8 М:8,22,30' />
+  </node>
+  <node id='613061428' timestamp='2011-07-30T06:36:58Z' uid='437435' user='Jenya' visible='true' version='7' changeset='8869338' lat='56.646243' lon='47.8631109' />
+  <node id='620400417' timestamp='2011-07-30T06:37:01Z' uid='437435' user='Jenya' visible='true' version='9' changeset='8869338' lat='56.6234012' lon='47.8845644'>
+    <tag k='crossing' v='traffic_signals' />
+    <tag k='highway' v='traffic_signals' />
+  </node>
+  <node id='621962640' timestamp='2011-07-18T18:38:27Z' uid='73184' user='kolen' visible='true' version='2' changeset='8761431' lat='56.6421936' lon='47.85155'>
+    <tag k='highway' v='bus_stop' />
+    <tag k='name' v='улица Березово' />
+  </node>
+  <node id='632214746' timestamp='2010-04-20T08:52:55Z' uid='235335' user='Art&apos;y' visible='true' version='7' changeset='4475328' lat='56.6239656' lon='47.9335415' />
+  <node id='632214754' timestamp='2010-04-20T08:52:55Z' uid='235335' user='Art&apos;y' visible='true' version='7' changeset='4475328' lat='56.6237814' lon='47.9343152' />
+  <node id='632214756' timestamp='2010-04-20T08:52:56Z' uid='235335' user='Art&apos;y' visible='true' version='7' changeset='4475328' lat='56.6239043' lon='47.9341116' />
+  <node id='632214757' timestamp='2010-05-18T16:46:14Z' uid='261173' user='12rus' visible='true' version='11' changeset='4740353' lat='56.6239764' lon='47.9335931' />
+  <node id='632214758' timestamp='2010-04-20T08:52:55Z' uid='235335' user='Art&apos;y' visible='true' version='8' changeset='4475328' lat='56.6239669' lon='47.9338016' />
+  <node id='632360020' timestamp='2011-07-30T06:37:00Z' uid='437435' user='Jenya' visible='true' version='10' changeset='8869338' lat='56.6281739' lon='47.8780068' />
+  <node id='632360023' timestamp='2010-05-10T07:42:23Z' uid='235335' user='Art&apos;y' visible='true' version='9' changeset='4656631' lat='56.6284805' lon='47.8774326' />
+  <node id='632360037' timestamp='2010-05-10T07:42:26Z' uid='235335' user='Art&apos;y' visible='true' version='5' changeset='4656631' lat='56.6286452' lon='47.8763848' />
+  <node id='632360038' timestamp='2010-04-18T14:58:59Z' uid='261173' user='12rus' visible='true' version='4' changeset='4458041' lat='56.6287602' lon='47.8755951' />
+  <node id='632360225' timestamp='2010-04-23T19:56:38Z' uid='235335' user='Art&apos;y' visible='true' version='6' changeset='4506744' lat='56.6324771' lon='47.86963' />
+  <node id='632360226' timestamp='2010-04-17T09:43:19Z' uid='235335' user='Art&apos;y' visible='true' version='5' changeset='4445966' lat='56.6316634' lon='47.8707301' />
+  <node id='632490922' timestamp='2010-05-15T16:47:23Z' uid='261173' user='12rus' visible='true' version='5' changeset='4708166' lat='56.6278492' lon='47.9041864' />
+  <node id='632490929' timestamp='2010-04-15T17:33:11Z' uid='235335' user='Art&apos;y' visible='true' version='4' changeset='4432593' lat='56.6279938' lon='47.9038108' />
+  <node id='632490968' timestamp='2010-04-15T17:33:11Z' uid='235335' user='Art&apos;y' visible='true' version='4' changeset='4432593' lat='56.6273683' lon='47.9049775' />
+  <node id='632490970' timestamp='2010-05-15T16:47:13Z' uid='261173' user='12rus' visible='true' version='5' changeset='4708166' lat='56.6274656' lon='47.9046799' />
+  <node id='632490976' timestamp='2010-05-15T16:47:13Z' uid='261173' user='12rus' visible='true' version='4' changeset='4708166' lat='56.6276603' lon='47.904358' />
+  <node id='635916796' timestamp='2010-04-18T15:44:02Z' uid='261173' user='12rus' visible='true' version='11' changeset='4458922' lat='56.6229674' lon='47.888856' />
+  <node id='635916910' timestamp='2010-04-17T09:43:15Z' uid='235335' user='Art&apos;y' visible='true' version='5' changeset='4445966' lat='56.6222831' lon='47.8877126'>
+    <tag k='crossing' v='uncontrolled' />
+    <tag k='highway' v='crossing' />
+  </node>
+  <node id='635932184' timestamp='2010-11-04T13:44:05Z' uid='261173' user='12rus' visible='true' version='6' changeset='6288618' lat='56.6271664' lon='47.9061756'>
+    <tag k='crossing' v='uncontrolled' />
+    <tag k='highway' v='crossing' />
+  </node>
+  <node id='635942386' timestamp='2010-04-20T08:52:40Z' uid='235335' user='Art&apos;y' visible='true' version='5' changeset='4475328' lat='56.6231484' lon='47.9360736' />
+  <node id='635942387' timestamp='2010-05-18T16:46:14Z' uid='261173' user='12rus' visible='true' version='9' changeset='4740353' lat='56.6240207' lon='47.9318014' />
+  <node id='635942391' timestamp='2010-05-18T16:46:16Z' uid='261173' user='12rus' visible='true' version='5' changeset='4740353' lat='56.6227959' lon='47.9377774' />
+  <node id='635942394' timestamp='2010-04-18T15:28:52Z' uid='261173' user='12rus' visible='true' version='4' changeset='4458922' lat='56.6221263' lon='47.9415131' />
+  <node id='635942395' timestamp='2011-01-09T20:26:40Z' uid='235335' user='Art&apos;y' visible='true' version='12' changeset='6920249' lat='56.6217426' lon='47.9454583' />
+  <node id='635942397' timestamp='2010-04-12T14:28:47Z' uid='261173' user='12rus' visible='true' version='3' changeset='4404563' lat='56.623433' lon='47.9349599' />
+  <node id='635942398' timestamp='2011-07-12T08:37:09Z' uid='73184' user='kolen' visible='true' version='6' changeset='8700906' lat='56.6236141' lon='47.9345812' />
+  <node id='635942399' timestamp='2010-04-20T08:52:55Z' uid='235335' user='Art&apos;y' visible='true' version='4' changeset='4475328' lat='56.6237053' lon='47.9344165' />
+  <node id='635942461' timestamp='2010-05-18T16:46:13Z' uid='261173' user='12rus' visible='true' version='5' changeset='4740353' lat='56.6239233' lon='47.9331532' />
+  <node id='635942462' timestamp='2010-05-18T16:46:14Z' uid='261173' user='12rus' visible='true' version='5' changeset='4740353' lat='56.6239292' lon='47.9326114' />
+  <node id='635946514' timestamp='2010-05-18T16:46:23Z' uid='261173' user='12rus' visible='true' version='6' changeset='4740353' lat='56.6260244' lon='47.9213622' />
+  <node id='635946516' timestamp='2010-05-18T16:46:23Z' uid='261173' user='12rus' visible='true' version='6' changeset='4740353' lat='56.6264523' lon='47.918106' />
+  <node id='635946518' timestamp='2010-05-18T16:46:23Z' uid='261173' user='12rus' visible='true' version='6' changeset='4740353' lat='56.6265615' lon='47.9166362' />
+  <node id='635946521' timestamp='2010-05-18T16:46:23Z' uid='261173' user='12rus' visible='true' version='7' changeset='4740353' lat='56.6265704' lon='47.9152843'>
+    <tag k='highway' v='traffic_signals' />
+  </node>
+  <node id='635946523' timestamp='2010-05-18T16:46:18Z' uid='261173' user='12rus' visible='true' version='7' changeset='4740353' lat='56.6265733' lon='47.9151073'>
+    <tag k='highway' v='traffic_signals' />
+  </node>
+  <node id='635951105' timestamp='2011-02-19T08:02:00Z' uid='261173' user='12rus' visible='true' version='6' changeset='7329015' lat='56.6289666' lon='47.8746552' />
+  <node id='635951106' timestamp='2011-02-19T08:01:59Z' uid='261173' user='12rus' visible='true' version='6' changeset='7329015' lat='56.6290336' lon='47.8743945' />
+  <node id='635951128' timestamp='2011-02-19T08:02:00Z' uid='261173' user='12rus' visible='true' version='6' changeset='7329015' lat='56.6291044' lon='47.8742124' />
+  <node id='637690627' timestamp='2011-07-30T06:37:00Z' uid='437435' user='Jenya' visible='true' version='15' changeset='8869338' lat='56.6448679' lon='47.8745052'>
+    <tag k='highway' v='traffic_signals' />
+  </node>
+  <node id='637690633' timestamp='2011-07-30T06:37:05Z' uid='437435' user='Jenya' visible='true' version='11' changeset='8869338' lat='56.6447003' lon='47.8746272' />
+  <node id='637692561' timestamp='2011-07-30T06:36:59Z' uid='437435' user='Jenya' visible='true' version='4' changeset='8869338' lat='56.6442281' lon='47.8572602' />
+  <node id='637692562' timestamp='2011-07-30T06:36:59Z' uid='437435' user='Jenya' visible='true' version='3' changeset='8869338' lat='56.6443766' lon='47.8573945' />
+  <node id='637692568' timestamp='2011-07-30T06:36:58Z' uid='437435' user='Jenya' visible='true' version='4' changeset='8869338' lat='56.6441459' lon='47.8567124' />
+  <node id='637692571' timestamp='2010-02-12T19:36:55Z' uid='220346' user='benderboy' visible='true' version='1' changeset='3859454' lat='56.644152' lon='47.8564233' />
+  <node id='637694461' timestamp='2011-07-30T06:36:58Z' uid='437435' user='Jenya' visible='true' version='5' changeset='8869338' lat='56.6450618' lon='47.858417' />
+  <node id='637694498' timestamp='2011-07-30T06:36:58Z' uid='437435' user='Jenya' visible='true' version='2' changeset='8869338' lat='56.6445709' lon='47.8574854' />
+  <node id='637694502' timestamp='2011-07-30T06:36:58Z' uid='437435' user='Jenya' visible='true' version='3' changeset='8869338' lat='56.6446866' lon='47.8575419' />
+  <node id='637694505' timestamp='2011-07-30T06:36:58Z' uid='437435' user='Jenya' visible='true' version='2' changeset='8869338' lat='56.644767' lon='47.857692' />
+  <node id='637694508' timestamp='2011-07-30T06:36:58Z' uid='437435' user='Jenya' visible='true' version='3' changeset='8869338' lat='56.6448422' lon='47.8578851'>
+    <tag k='crossing' v='uncontrolled' />
+    <tag k='highway' v='crossing' />
+  </node>
+  <node id='639251726' timestamp='2011-07-30T06:37:00Z' uid='437435' user='Jenya' visible='true' version='8' changeset='8869338' lat='56.646272' lon='47.8678307' />
+  <node id='639251727' timestamp='2011-07-30T06:37:00Z' uid='437435' user='Jenya' visible='true' version='5' changeset='8869338' lat='56.6463402' lon='47.8673283' />
+  <node id='639251728' timestamp='2011-07-30T06:37:00Z' uid='437435' user='Jenya' visible='true' version='6' changeset='8869338' lat='56.6463893' lon='47.8661152' />
+  <node id='639251729' timestamp='2011-07-30T06:37:00Z' uid='437435' user='Jenya' visible='true' version='6' changeset='8869338' lat='56.6463782' lon='47.8654987' />
+  <node id='639251730' timestamp='2011-07-30T06:36:57Z' uid='437435' user='Jenya' visible='true' version='6' changeset='8869338' lat='56.6463432' lon='47.8644408' />
+  <node id='639251731' timestamp='2011-07-30T06:36:58Z' uid='437435' user='Jenya' visible='true' version='6' changeset='8869338' lat='56.6458769' lon='47.8610553' />
+  <node id='640149374' timestamp='2011-01-09T20:26:47Z' uid='235335' user='Art&apos;y' visible='true' version='6' changeset='6920249' lat='56.6379259' lon='47.9339226'>
+    <tag k='highway' v='traffic_signals' />
+  </node>
+  <node id='644538000' timestamp='2010-05-18T16:46:18Z' uid='261173' user='12rus' visible='true' version='7' changeset='4740353' lat='56.6265674' lon='47.9156813' />
+  <node id='644538001' timestamp='2010-11-04T13:44:05Z' uid='261173' user='12rus' visible='true' version='8' changeset='6288618' lat='56.6265792' lon='47.9147747' />
+  <node id='644538013' timestamp='2011-07-17T20:40:46Z' uid='235335' user='Art&apos;y' visible='true' version='8' changeset='8752434' lat='56.6355796' lon='47.9208646' />
+  <node id='644538015' timestamp='2010-04-20T08:52:50Z' uid='235335' user='Art&apos;y' visible='true' version='7' changeset='4475328' lat='56.6354576' lon='47.9214956' />
+  <node id='647098001' timestamp='2011-01-09T20:26:47Z' uid='235335' user='Art&apos;y' visible='true' version='13' changeset='6920249' lat='56.6355095' lon='47.9400024' />
+  <node id='648828492' timestamp='2011-07-30T06:37:05Z' uid='437435' user='Jenya' visible='true' version='9' changeset='8869338' lat='56.6442215' lon='47.8771038' />
+  <node id='649176539' timestamp='2011-07-30T06:36:58Z' uid='437435' user='Jenya' visible='true' version='6' changeset='8869338' lat='56.6462157' lon='47.8628333' />
+  <node id='650035908' timestamp='2010-04-20T08:53:15Z' uid='235335' user='Art&apos;y' visible='true' version='6' changeset='4475328' lat='56.6286623' lon='47.9471653' />
+  <node id='650035942' timestamp='2010-04-20T08:53:17Z' uid='235335' user='Art&apos;y' visible='true' version='7' changeset='4475328' lat='56.6298424' lon='47.9478608' />
+  <node id='666882093' timestamp='2011-01-09T20:27:58Z' uid='235335' user='Art&apos;y' visible='true' version='6' changeset='6920249' lat='56.6346511' lon='47.9422264'>
+    <tag k='highway' v='traffic_signals' />
+  </node>
+  <node id='666882097' timestamp='2011-01-09T20:27:25Z' uid='235335' user='Art&apos;y' visible='true' version='8' changeset='6920249' lat='56.6345758' lon='47.9424154'>
+    <tag k='highway' v='traffic_signals' />
+  </node>
+  <node id='666937040' timestamp='2010-04-18T15:28:52Z' uid='261173' user='12rus' visible='true' version='4' changeset='4458922' lat='56.6218371' lon='47.9436481' />
+  <node id='666937051' timestamp='2010-04-20T08:53:18Z' uid='235335' user='Art&apos;y' visible='true' version='8' changeset='4475328' lat='56.6314611' lon='47.9500568' />
+  <node id='666983796' timestamp='2010-05-18T16:46:15Z' uid='261173' user='12rus' visible='true' version='7' changeset='4740353' lat='56.6238141' lon='47.9343012' />
+  <node id='678855772' timestamp='2011-07-30T06:37:05Z' uid='437435' user='Jenya' visible='true' version='7' changeset='8869338' lat='56.6219462' lon='47.8869572' />
+  <node id='678855773' timestamp='2011-07-30T06:37:05Z' uid='437435' user='Jenya' visible='true' version='7' changeset='8869338' lat='56.6220065' lon='47.8870984' />
+  <node id='702110956' timestamp='2011-04-25T16:00:46Z' uid='345246' user='VladyaSG' visible='true' version='2' changeset='7965223' lat='56.6343385' lon='47.9425604'>
+    <tag k='bench' v='no' />
+    <tag k='highway' v='bus_stop' />
+    <tag k='name' v='Ремзавод' />
+    <tag k='shelter' v='no' />
+    <tag k='tactile_paving' v='no' />
+  </node>
+  <node id='702110976' timestamp='2011-07-18T18:38:25Z' uid='73184' user='kolen' visible='true' version='2' changeset='8761431' lat='56.6358095' lon='47.938872'>
+    <tag k='alt_name' v='Автоколонна 1311' />
+    <tag k='bench' v='no' />
+    <tag k='highway' v='bus_stop' />
+    <tag k='name' v='Ремзавод' />
+    <tag k='shelter' v='no' />
+    <tag k='tactile_paving' v='no' />
+  </node>
+  <node id='702300877' timestamp='2010-04-20T08:53:15Z' uid='235335' user='Art&apos;y' visible='true' version='2' changeset='4475328' lat='56.6271821' lon='47.9468298' />
+  <node id='702791235' timestamp='2010-04-20T19:18:56Z' uid='235335' user='Art&apos;y' visible='true' version='1' changeset='4480629' lat='56.6232553' lon='47.8892869' />
+  <node id='702791299' timestamp='2011-07-30T06:37:00Z' uid='437435' user='Jenya' visible='true' version='2' changeset='8869338' lat='56.6272722' lon='47.8792573' />
+  <node id='702791372' timestamp='2010-04-20T19:19:01Z' uid='235335' user='Art&apos;y' visible='true' version='1' changeset='4480629' lat='56.6251114' lon='47.8933148' />
+  <node id='702981012' timestamp='2010-04-20T22:14:16Z' uid='235335' user='Art&apos;y' visible='true' version='1' changeset='4482381' lat='56.6286194' lon='47.8955603' />
+  <node id='703065270' timestamp='2010-04-21T06:38:20Z' uid='235335' user='Art&apos;y' visible='true' version='1' changeset='4483684' lat='56.6258177' lon='47.9465106' />
+  <node id='703065274' timestamp='2010-04-21T06:38:20Z' uid='235335' user='Art&apos;y' visible='true' version='1' changeset='4483684' lat='56.6287695' lon='47.9471973' />
+  <node id='703065275' timestamp='2010-04-21T06:38:20Z' uid='235335' user='Art&apos;y' visible='true' version='1' changeset='4483684' lat='56.6285622' lon='47.9471426' />
+  <node id='705151065' timestamp='2011-07-30T06:36:59Z' uid='437435' user='Jenya' visible='true' version='2' changeset='8869338' lat='56.6441626' lon='47.8570597' />
+  <node id='705151329' timestamp='2010-04-25T07:52:06Z' uid='235335' user='Art&apos;y' visible='true' version='2' changeset='4518417' lat='56.6427577' lon='47.8525835' />
+  <node id='705416990' timestamp='2011-07-30T06:36:58Z' uid='437435' user='Jenya' visible='true' version='2' changeset='8869338' lat='56.6457703' lon='47.8607022' />
+  <node id='708181768' timestamp='2010-04-27T05:43:47Z' uid='235335' user='Art&apos;y' visible='true' version='2' changeset='4538147' lat='56.6321947' lon='47.841411' />
+  <node id='728227562' timestamp='2010-05-10T07:42:21Z' uid='235335' user='Art&apos;y' visible='true' version='1' changeset='4656631' lat='56.6283795' lon='47.8776146' />
+  <node id='885298231' timestamp='2010-08-28T19:06:12Z' uid='235335' user='Art&apos;y' visible='true' version='1' changeset='5619145' lat='56.6268871' lon='47.9467608' />
+  <node id='911550621' timestamp='2010-09-14T04:14:49Z' uid='261620' user='shafr' visible='true' version='1' changeset='5775179' lat='56.6353432' lon='47.8659709' />
+  <node id='911637597' timestamp='2011-01-08T15:04:27Z' uid='235335' user='Art&apos;y' visible='true' version='3' changeset='6904682' lat='56.6267241' lon='47.9109713' />
+  <node id='950795903' timestamp='2011-02-20T19:30:14Z' uid='235335' user='Art&apos;y' visible='true' version='2' changeset='7346787' lat='56.635193' lon='47.9408143' />
+  <node id='959548862' timestamp='2011-01-08T15:04:13Z' uid='235335' user='Art&apos;y' visible='true' version='3' changeset='6904682' lat='56.6401301' lon='47.8975767' />
+  <node id='959553164' timestamp='2011-02-20T20:02:26Z' uid='235335' user='Art&apos;y' visible='true' version='2' changeset='7347185' lat='56.6245363' lon='47.9461898' />
+  <node id='963689188' action='delete' timestamp='2010-10-24T18:25:16Z' uid='359125' user='Енот' visible='true' version='1' changeset='6160483' lat='56.6407049' lon='47.8445678' />
+  <node id='963689193' action='delete' timestamp='2010-10-24T18:25:17Z' uid='359125' user='Енот' visible='true' version='1' changeset='6160483' lat='56.6406825' lon='47.8439618' />
+  <node id='976543270' timestamp='2011-03-27T23:50:20Z' uid='427619' user='BIT' visible='true' version='2' changeset='7692312' lat='56.6346751' lon='47.866897' />
+  <node id='985999112' timestamp='2011-01-08T15:03:03Z' uid='235335' user='Art&apos;y' visible='true' version='2' changeset='6904682' lat='56.626123' lon='47.8940874' />
+  <node id='1000822696' timestamp='2011-07-30T06:37:01Z' uid='437435' user='Jenya' visible='true' version='2' changeset='8869338' lat='56.6252902' lon='47.8819918' />
+  <node id='1138883760' timestamp='2011-07-30T06:37:05Z' uid='437435' user='Jenya' visible='true' version='2' changeset='8869338' lat='56.6424793' lon='47.8856766' />
+  <node id='1138883782' timestamp='2011-07-30T06:37:05Z' uid='437435' user='Jenya' visible='true' version='3' changeset='8869338' lat='56.6420242' lon='47.8880529' />
+  <node id='1138883832' timestamp='2011-07-30T06:37:05Z' uid='437435' user='Jenya' visible='true' version='2' changeset='8869338' lat='56.6423394' lon='47.8864147' />
+  <node id='1139368074' timestamp='2011-02-06T16:27:16Z' uid='248302' user='Maxim Kraev' visible='true' version='1' changeset='7205713' lat='56.6317554' lon='47.8420174' />
+  <node id='1158703123' timestamp='2011-07-18T18:38:27Z' uid='73184' user='kolen' visible='true' version='2' changeset='8761431' lat='56.6390801' lon='47.8323573'>
+    <tag k='highway' v='bus_stop' />
+    <tag k='name' v='улица Йывана Кырли' />
+  </node>
+  <node id='1158709116' timestamp='2011-07-18T18:38:26Z' uid='73184' user='kolen' visible='true' version='2' changeset='8761431' lat='56.6403249' lon='47.8372175'>
+    <tag k='highway' v='bus_stop' />
+    <tag k='name' v='сквер Йывана Кырли' />
+  </node>
+  <node id='1158709982' timestamp='2011-07-18T18:38:27Z' uid='73184' user='kolen' visible='true' version='2' changeset='8761431' lat='56.6405609' lon='47.8433651'>
+    <tag k='highway' v='bus_stop' />
+    <tag k='name' v='улица Баумана' />
+  </node>
+  <node id='1187082383' timestamp='2011-03-05T11:30:39Z' uid='269466' user='vfjj' visible='true' version='1' changeset='7462116' lat='56.6230061' lon='47.9367613' />
+  <node id='1187109381' timestamp='2011-03-05T11:47:30Z' uid='269466' user='vfjj' visible='true' version='1' changeset='7462268' lat='56.6224446' lon='47.9397371' />
+  <node id='1198958488' timestamp='2011-07-30T06:37:00Z' uid='437435' user='Jenya' visible='true' version='2' changeset='8869338' lat='56.6456911' lon='47.870834' />
+  <node id='1198958502' timestamp='2011-07-30T06:37:00Z' uid='437435' user='Jenya' visible='true' version='2' changeset='8869338' lat='56.6460827' lon='47.8688744' />
+  <node id='1198958533' timestamp='2011-07-30T06:37:00Z' uid='437435' user='Jenya' visible='true' version='2' changeset='8869338' lat='56.6451384' lon='47.8733073' />
+  <node id='1219142328' timestamp='2011-03-26T15:03:56Z' uid='427619' user='BIT' visible='true' version='1' changeset='7676386' lat='56.6356243' lon='47.8655812' />
+  <node id='1222254839' timestamp='2011-03-27T20:33:44Z' uid='427619' user='BIT' visible='true' version='1' changeset='7690902' lat='56.6295508' lon='47.8736089' />
+  <node id='1222254846' timestamp='2011-03-27T20:33:44Z' uid='427619' user='BIT' visible='true' version='1' changeset='7690902' lat='56.6294841' lon='47.8736992' />
+  <node id='1222485968' timestamp='2011-03-28T01:34:08Z' uid='427619' user='BIT' visible='true' version='2' changeset='7692690' lat='56.6347721' lon='47.866766' />
+  <node id='1222485983' timestamp='2011-03-27T23:50:06Z' uid='427619' user='BIT' visible='true' version='1' changeset='7692312' lat='56.6343557' lon='47.8673398' />
+  <node id='1222486074' timestamp='2011-03-27T23:50:11Z' uid='427619' user='BIT' visible='true' version='1' changeset='7692312' lat='56.6349746' lon='47.8664818' />
+  <node id='1241841940' timestamp='2011-04-12T11:13:59Z' uid='432362' user='travoltino' visible='true' version='1' changeset='7841477' lat='56.6257155' lon='47.923024' />
+  <node id='1241849910' timestamp='2011-04-12T11:19:35Z' uid='432362' user='travoltino' visible='true' version='1' changeset='7841635' lat='56.626415' lon='47.9183898' />
+  <node id='1243946589' timestamp='2011-04-14T04:49:19Z' uid='432362' user='travoltino' visible='true' version='1' changeset='7857497' lat='56.6293037' lon='47.8739431' />
+  <node id='1251026055' timestamp='2011-07-18T18:38:28Z' uid='73184' user='kolen' visible='true' version='2' changeset='8761431' lat='56.6353445' lon='47.8373859'>
+    <tag k='highway' v='bus_stop' />
+    <tag k='name' v='улица Прохорова' />
+  </node>
+  <node id='1274026898' timestamp='2011-05-06T05:47:53Z' uid='235335' user='Art&apos;y' visible='true' version='1' changeset='8062531' lat='56.6338438' lon='47.9311818' />
+  <node id='1274026914' timestamp='2011-05-06T05:47:53Z' uid='235335' user='Art&apos;y' visible='true' version='1' changeset='8062531' lat='56.6218096' lon='47.9441749' />
+  <node id='1274027162' timestamp='2011-05-06T05:48:00Z' uid='235335' user='Art&apos;y' visible='true' version='1' changeset='8062531' lat='56.6345527' lon='47.9316549' />
+  <node id='1323385642' timestamp='2011-06-13T10:02:37Z' uid='73184' user='kolen' visible='true' version='1' changeset='8424006' lat='56.6296595' lon='47.9475504'>
+    <tag k='highway' v='bus_stop' />
+    <tag k='name' v='Баня' />
+  </node>
+  <node id='1323393248' timestamp='2011-07-18T18:38:24Z' uid='73184' user='kolen' visible='true' version='2' changeset='8761431' lat='56.6262835' lon='47.9465144'>
+    <tag k='highway' v='bus_stop' />
+    <tag k='name' v='Кирзавод' />
+  </node>
+  <node id='1323393249' timestamp='2011-07-18T18:38:27Z' uid='73184' user='kolen' visible='true' version='2' changeset='8761431' lat='56.6227603' lon='47.945509'>
+    <tag k='highway' v='bus_stop' />
+    <tag k='name' v='улица Лебедева' />
+  </node>
+  <node id='1356980258' timestamp='2011-07-10T19:15:56Z' uid='73184' user='kolen' visible='true' version='1' changeset='8687402' lat='56.6265765' lon='47.9149258' />
+  <node id='1356980261' timestamp='2011-07-10T19:15:56Z' uid='73184' user='kolen' visible='true' version='1' changeset='8687402' lat='56.6265916' lon='47.9142259' />
+  <node id='1365747823' timestamp='2011-07-18T18:37:46Z' uid='73184' user='kolen' visible='true' version='1' changeset='8761431' lat='56.6290785' lon='47.9472895'>
+    <tag k='name' v='Баня' />
+    <tag k='public_transport' v='stop_position' />
+  </node>
+  <node id='1365747826' timestamp='2011-07-18T18:37:46Z' uid='73184' user='kolen' visible='true' version='1' changeset='8761431' lat='56.629637' lon='47.9476306'>
+    <tag k='name' v='Баня' />
+    <tag k='public_transport' v='stop_position' />
+  </node>
+  <node id='1365747827' timestamp='2011-07-18T18:37:46Z' uid='73184' user='kolen' visible='true' version='1' changeset='8761431' lat='56.6393127' lon='47.9016127'>
+    <tag k='alt_name' v='Аптека №1' />
+    <tag k='name' v='Вознесенская' />
+    <tag k='public_transport' v='stop_position' />
+  </node>
+  <node id='1365747831' timestamp='2011-07-18T18:37:46Z' uid='73184' user='kolen' visible='true' version='1' changeset='8761431' lat='56.6353033' lon='47.9223336'>
+    <tag k='alt_name' v='Айвика' />
+    <tag k='name' v='Госархив' />
+    <tag k='public_transport' v='stop_position' />
+  </node>
+  <node id='1365747837' timestamp='2011-07-18T18:37:47Z' uid='73184' user='kolen' visible='true' version='1' changeset='8761431' lat='56.6409453' lon='47.8935176'>
+    <tag k='name' v='Дом быта' />
+    <tag k='public_transport' v='stop_position' />
+  </node>
+  <node id='1365747841' timestamp='2011-07-18T18:37:47Z' uid='73184' user='kolen' visible='true' version='1' changeset='8761431' lat='56.6362947' lon='47.8634583'>
+    <tag k='name' v='Завод &quot;ММЗ&quot;' />
+    <tag k='public_transport' v='stop_position' />
+  </node>
+  <node id='1365747845' timestamp='2011-07-18T18:37:47Z' uid='73184' user='kolen' visible='true' version='1' changeset='8761431' lat='56.6367724' lon='47.9365547'>
+    <tag k='name' v='Заречная' />
+    <tag k='public_transport' v='platform' />
+  </node>
+  <node id='1365747847' timestamp='2011-07-18T18:37:47Z' uid='73184' user='kolen' visible='true' version='1' changeset='8761431' lat='56.6368416' lon='47.9366721'>
+    <tag k='name' v='Заречная' />
+    <tag k='public_transport' v='stop_position' />
+  </node>
+  <node id='1365747848' timestamp='2011-07-18T18:37:47Z' uid='73184' user='kolen' visible='true' version='1' changeset='8761431' lat='56.6257125' lon='47.9464843'>
+    <tag k='name' v='Кирзавод' />
+    <tag k='public_transport' v='stop_position' />
+  </node>
+  <node id='1365747851' timestamp='2011-07-18T18:37:47Z' uid='73184' user='kolen' visible='true' version='1' changeset='8761431' lat='56.6262736' lon='47.9466173'>
+    <tag k='name' v='Кирзавод' />
+    <tag k='public_transport' v='stop_position' />
+  </node>
+  <node id='1365747856' timestamp='2011-07-30T06:37:05Z' uid='437435' user='Jenya' visible='true' version='2' changeset='8869338' lat='56.6423859' lon='47.8861691'>
+    <tag k='name' v='Магазин &quot;Электрон&quot;' />
+    <tag k='public_transport' v='stop_position' />
+  </node>
+  <node id='1365747857' timestamp='2011-07-30T06:37:00Z' uid='437435' user='Jenya' visible='true' version='2' changeset='8869338' lat='56.6456315' lon='47.8711006'>
+    <tag k='name' v='Микрорайон &quot;Гомзово&quot;' />
+    <tag k='public_transport' v='stop_position' />
+  </node>
+  <node id='1365747860' timestamp='2011-07-30T06:37:00Z' uid='437435' user='Jenya' visible='true' version='2' changeset='8869338' lat='56.6457554' lon='47.8705171'>
+    <tag k='name' v='Микрорайон &quot;Гомзово&quot;' />
+    <tag k='public_transport' v='stop_position' />
+  </node>
+  <node id='1365747861' timestamp='2011-07-18T18:37:47Z' uid='73184' user='kolen' visible='true' version='1' changeset='8761431' lat='56.6218039' lon='47.9442846'>
+    <tag k='name' v='Микрорайон &quot;Нагорный&quot;' />
+    <tag k='public_transport' v='stop_position' />
+  </node>
+  <node id='1365747863' timestamp='2011-07-18T18:37:47Z' uid='73184' user='kolen' visible='true' version='1' changeset='8761431' lat='56.622381' lon='47.9400919'>
+    <tag k='fixme' v='check position' />
+    <tag k='name' v='Микрорайон &quot;Нагорный&quot;' />
+    <tag k='public_transport' v='stop_position' />
+  </node>
+  <node id='1365747867' timestamp='2011-07-18T18:37:48Z' uid='73184' user='kolen' visible='true' version='1' changeset='8761431' lat='56.6224614' lon='47.9401365'>
+    <tag k='fixme' v='check position' />
+    <tag k='name' v='Микрорайон &quot;Нагорный&quot;' />
+    <tag k='public_transport' v='platform' />
+  </node>
+  <node id='1365747869' timestamp='2011-07-18T18:37:48Z' uid='73184' user='kolen' visible='true' version='1' changeset='8761431' lat='56.6269008' lon='47.9084488'>
+    <tag k='name' v='Парк им. 400-летия Йошкар-Олы' />
+    <tag k='public_transport' v='stop_position' />
+  </node>
+  <node id='1365747872' timestamp='2011-07-18T18:37:48Z' uid='73184' user='kolen' visible='true' version='1' changeset='8761431' lat='56.6269957' lon='47.9075753'>
+    <tag k='name' v='Парк им. 400-летия Йошкар-Олы' />
+    <tag k='public_transport' v='stop_position' />
+  </node>
+  <node id='1365747873' timestamp='2011-07-18T18:37:48Z' uid='73184' user='kolen' visible='true' version='1' changeset='8761431' lat='56.6332133' lon='47.8399975'>
+    <tag k='name' v='Профессиональная' />
+    <tag k='public_transport' v='stop_position' />
+  </node>
+  <node id='1365747875' timestamp='2011-07-18T18:37:48Z' uid='73184' user='kolen' visible='true' version='1' changeset='8761431' lat='56.6344461' lon='47.9427202'>
+    <tag k='name' v='Ремзавод' />
+    <tag k='public_transport' v='stop_position' />
+  </node>
+  <node id='1365747879' timestamp='2011-07-18T18:37:48Z' uid='73184' user='kolen' visible='true' version='1' changeset='8761431' lat='56.6356751' lon='47.9395976'>
+    <tag k='alt_name' v='Автоколонна 1311' />
+    <tag k='name' v='Ремзавод' />
+    <tag k='public_transport' v='stop_position' />
+  </node>
+  <node id='1365747883' timestamp='2011-07-18T18:37:48Z' uid='73184' user='kolen' visible='true' version='1' changeset='8761431' lat='56.6359064' lon='47.9390322'>
+    <tag k='alt_name' v='Автоколонна 1311' />
+    <tag k='name' v='Ремзавод' />
+    <tag k='public_transport' v='stop_position' />
+  </node>
+  <node id='1365747887' timestamp='2011-07-30T06:37:02Z' uid='437435' user='Jenya' visible='true' version='2' changeset='8869338' lat='56.6222826' lon='47.8860415'>
+    <tag k='name' v='Спорткомплекс &quot;Юбилейный&quot;' />
+    <tag k='public_transport' v='stop_position' />
+  </node>
+  <node id='1365747888' timestamp='2011-07-30T06:37:02Z' uid='437435' user='Jenya' visible='true' version='2' changeset='8869338' lat='56.6227907' lon='47.8853706'>
+    <tag k='name' v='Спорткомплекс &quot;Юбилейный&quot;' />
+    <tag k='public_transport' v='stop_position' />
+  </node>
+  <node id='1365747890' timestamp='2011-07-18T18:37:48Z' uid='73184' user='kolen' visible='true' version='1' changeset='8761431' lat='56.6377709' lon='47.9092954'>
+    <tag k='name' v='Стадион &quot;Электрон&quot;' />
+    <tag k='public_transport' v='stop_position' />
+  </node>
+  <node id='1365747899' timestamp='2011-07-18T18:37:49Z' uid='73184' user='kolen' visible='true' version='1' changeset='8761431' lat='56.6344002' lon='47.9315532'>
+    <tag k='name' v='Универсам &quot;Восточный&quot;' />
+    <tag k='public_transport' v='stop_position' />
+  </node>
+  <node id='1365747901' timestamp='2011-07-30T06:37:05Z' uid='437435' user='Jenya' visible='true' version='2' changeset='8869338' lat='56.644039' lon='47.8779624'>
+    <tag k='name' v='Университет' />
+    <tag k='public_transport' v='stop_position' />
+  </node>
+  <node id='1365747904' timestamp='2011-07-18T18:37:49Z' uid='73184' user='kolen' visible='true' version='1' changeset='8761431' lat='56.6362965' lon='47.9169018'>
+    <tag k='name' v='Центральный микрорайон' />
+    <tag k='public_transport' v='stop_position' />
+  </node>
+  <node id='1365747906' timestamp='2011-07-18T18:37:49Z' uid='73184' user='kolen' visible='true' version='1' changeset='8761431' lat='56.6368793' lon='47.8350044'>
+    <tag k='name' v='магазин &quot;Марийка&quot;' />
+    <tag k='public_transport' v='stop_position' />
+  </node>
+  <node id='1365747910' timestamp='2011-07-18T18:37:49Z' uid='73184' user='kolen' visible='true' version='1' changeset='8761431' lat='56.6404301' lon='47.8372085'>
+    <tag k='name' v='сквер Йывана Кырли' />
+    <tag k='public_transport' v='stop_position' />
+  </node>
+  <node id='1365747918' timestamp='2011-07-18T18:37:49Z' uid='73184' user='kolen' visible='true' version='1' changeset='8761431' lat='56.6448212' lon='47.8579918' />
+  <node id='1365747921' timestamp='2011-07-18T18:37:49Z' uid='73184' user='kolen' visible='true' version='1' changeset='8761431' lat='56.6450166' lon='47.8584167' />
+  <node id='1365747923' timestamp='2011-07-18T18:37:49Z' uid='73184' user='kolen' visible='true' version='1' changeset='8761431' lat='56.6450574' lon='47.8585545' />
+  <node id='1365747926' timestamp='2011-07-30T06:36:58Z' uid='437435' user='Jenya' visible='true' version='2' changeset='8869338' lat='56.6460987' lon='47.8619487'>
+    <tag k='name' v='улица Анциферова' />
+    <tag k='public_transport' v='stop_position' />
+  </node>
+  <node id='1365747928' timestamp='2011-07-30T06:36:58Z' uid='437435' user='Jenya' visible='true' version='2' changeset='8869338' lat='56.6462492' lon='47.8631927'>
+    <tag k='name' v='улица Анциферова' />
+    <tag k='public_transport' v='stop_position' />
+  </node>
+  <node id='1365747932' timestamp='2011-07-18T18:37:49Z' uid='73184' user='kolen' visible='true' version='1' changeset='8761431' lat='56.6406593' lon='47.843359'>
+    <tag k='name' v='улица Баумана' />
+    <tag k='public_transport' v='stop_position' />
+  </node>
+  <node id='1365747937' timestamp='2011-07-18T18:37:50Z' uid='73184' user='kolen' visible='true' version='1' changeset='8761431' lat='56.6423142' lon='47.8513953'>
+    <tag k='name' v='улица Березово' />
+    <tag k='public_transport' v='stop_position' />
+  </node>
+  <node id='1365747938' timestamp='2011-07-18T18:37:50Z' uid='73184' user='kolen' visible='true' version='1' changeset='8761431' lat='56.628065' lon='47.8951813'>
+    <tag k='name' v='улица Вашская' />
+    <tag k='public_transport' v='stop_position' />
+  </node>
+  <node id='1365747940' timestamp='2011-07-18T18:37:50Z' uid='73184' user='kolen' visible='true' version='1' changeset='8761431' lat='56.6282887' lon='47.8953344'>
+    <tag k='name' v='улица Вашская' />
+    <tag k='public_transport' v='stop_position' />
+  </node>
+  <node id='1365747942' timestamp='2011-07-18T18:37:50Z' uid='73184' user='kolen' visible='true' version='1' changeset='8761431' lat='56.6390422' lon='47.8322201'>
+    <tag k='name' v='улица Йывана Кырли' />
+    <tag k='public_transport' v='stop_position' />
+  </node>
+  <node id='1365747944' timestamp='2011-07-18T18:37:50Z' uid='73184' user='kolen' visible='true' version='1' changeset='8761431' lat='56.6253932' lon='47.9247584'>
+    <tag k='name' v='улица Кирова' />
+    <tag k='public_transport' v='stop_position' />
+  </node>
+  <node id='1365747947' timestamp='2011-07-18T18:37:50Z' uid='73184' user='kolen' visible='true' version='1' changeset='8761431' lat='56.6255019' lon='47.9248526'>
+    <tag k='name' v='улица Кирова' />
+    <tag k='public_transport' v='platform' />
+  </node>
+  <node id='1365747950' timestamp='2011-07-18T18:37:50Z' uid='73184' user='kolen' visible='true' version='1' changeset='8761431' lat='56.6221083' lon='47.9455541'>
+    <tag k='name' v='улица Лебедева' />
+    <tag k='public_transport' v='stop_position' />
+  </node>
+  <node id='1365747957' timestamp='2011-07-18T18:37:50Z' uid='73184' user='kolen' visible='true' version='1' changeset='8761431' lat='56.6227473' lon='47.9457214'>
+    <tag k='name' v='улица Лебедева' />
+    <tag k='public_transport' v='stop_position' />
+  </node>
+  <node id='1365747960' timestamp='2011-07-18T18:37:50Z' uid='73184' user='kolen' visible='true' version='1' changeset='8761431' lat='56.6373789' lon='47.9335549'>
+    <tag k='name' v='улица Мира' />
+    <tag k='public_transport' v='stop_position' />
+  </node>
+  <node id='1365747965' timestamp='2011-07-18T18:37:50Z' uid='73184' user='kolen' visible='true' version='1' changeset='8761431' lat='56.6318012' lon='47.9492461'>
+    <tag k='name' v='улица Московская' />
+    <tag k='public_transport' v='stop_position' />
+  </node>
+  <node id='1365747970' timestamp='2011-07-18T18:37:50Z' uid='73184' user='kolen' visible='true' version='1' changeset='8761431' lat='56.6318997' lon='47.9487168'>
+    <tag k='name' v='улица Московская' />
+    <tag k='public_transport' v='platform' />
+  </node>
+  <node id='1365747972' timestamp='2011-07-18T18:37:50Z' uid='73184' user='kolen' visible='true' version='1' changeset='8761431' lat='56.6319744' lon='47.9488331'>
+    <tag k='name' v='улица Московская' />
+    <tag k='public_transport' v='stop_position' />
+  </node>
+  <node id='1365747978' timestamp='2011-07-30T06:37:00Z' uid='437435' user='Jenya' visible='true' version='2' changeset='8869338' lat='56.6268865' lon='47.8797994'>
+    <tag k='name' v='улица Панфилова' />
+    <tag k='public_transport' v='stop_position' />
+  </node>
+  <node id='1365747981' timestamp='2011-07-18T18:37:51Z' uid='73184' user='kolen' visible='true' version='1' changeset='8761431' lat='56.6265652' lon='47.9160381'>
+    <tag k='name' v='улица Петрова' />
+    <tag k='public_transport' v='stop_position' />
+  </node>
+  <node id='1365747984' timestamp='2011-07-18T18:37:51Z' uid='73184' user='kolen' visible='true' version='1' changeset='8761431' lat='56.6265941' lon='47.914115'>
+    <tag k='name' v='улица Петрова' />
+    <tag k='public_transport' v='stop_position' />
+  </node>
+  <node id='1365747987' timestamp='2011-07-18T18:37:51Z' uid='73184' user='kolen' visible='true' version='1' changeset='8761431' lat='56.6352621' lon='47.8371954'>
+    <tag k='name' v='улица Прохорова' />
+    <tag k='public_transport' v='stop_position' />
+  </node>
+  <node id='1365747989' timestamp='2011-07-30T06:36:58Z' uid='437435' user='Jenya' visible='true' version='2' changeset='8869338' lat='56.6450881' lon='47.858504'>
+    <tag k='name' v='улица Транспортная' />
+  </node>
+  <node id='1376997353' timestamp='2011-07-28T18:47:46Z' uid='437435' user='Jenya' visible='true' version='1' changeset='8857251' lat='56.6384597' lon='47.8328828' />
+  <node id='1377363528' timestamp='2011-07-29T08:21:29Z' uid='437435' user='Jenya' visible='true' version='1' changeset='8861003' lat='56.6219657' lon='47.9426991' />
+  <node id='1377363531' timestamp='2011-07-29T08:21:30Z' uid='437435' user='Jenya' visible='true' version='1' changeset='8861003' lat='56.6234467' lon='47.9459045' />
+  <node id='1378780455' timestamp='2011-07-30T12:49:27Z' uid='437435' user='Jenya' visible='true' version='1' changeset='8871911' lat='56.6355044' lon='47.8368672' />
+  <way id='26991988' timestamp='2011-07-18T18:38:19Z' uid='73184' user='kolen' visible='true' version='14' changeset='8761431'>
+    <nd ref='678855773' />
+    <nd ref='678855772' />
+    <tag k='addr:postcode' v='424000' />
+    <tag k='cladr:code' v='12000001000016000' />
+    <tag k='cladr:name' v='Карла Маркса' />
+    <tag k='cladr:suffix' v='Улица' />
+    <tag k='highway' v='primary' />
+    <tag k='junction' v='roundabout' />
+    <tag k='name' v='улица Карла Маркса' />
+    <tag k='oneway' v='yes' />
+    <tag k='trolley_wire' v='yes' />
+  </way>
+  <way id='29412002' timestamp='2011-08-09T12:52:06Z' uid='73184' user='kolen' visible='true' version='15' changeset='8966917'>
+    <nd ref='324160687' />
+    <nd ref='637692568' />
+    <nd ref='705151065' />
+    <nd ref='637692561' />
+    <nd ref='324160685' />
+    <nd ref='637692562' />
+    <nd ref='324160684' />
+    <tag k='highway' v='secondary' />
+    <tag k='junction' v='roundabout' />
+    <tag k='lanes' v='2' />
+    <tag k='name' v='Красноармейская улица' />
+    <tag k='oneway' v='yes' />
+    <tag k='trolley_wire' v='yes' />
+  </way>
+  <way id='29596438' timestamp='2011-04-24T08:16:44Z' uid='427187' user='Gordeich' visible='true' version='4' changeset='7950229'>
+    <nd ref='326066941' />
+    <nd ref='295855566' />
+    <tag k='bridge' v='yes' />
+    <tag k='highway' v='primary' />
+    <tag k='layer' v='1' />
+    <tag k='trolley_wire' v='yes' />
+  </way>
+  <way id='31290732' timestamp='2011-06-07T22:07:43Z' uid='133332' user='AMDmi3' visible='true' version='7' changeset='8374836'>
+    <nd ref='295855556' />
+    <nd ref='348131016' />
+    <nd ref='348131015' />
+    <nd ref='348131007' />
+    <nd ref='324177174' />
+    <tag k='addr:postcode' v='424000' />
+    <tag k='cladr:code' v='12000001000013700' />
+    <tag k='cladr:name' v='Ленинский' />
+    <tag k='cladr:suffix' v='Проспект' />
+    <tag k='highway' v='primary' />
+    <tag k='name' v='Ленинский проспект' />
+    <tag k='oneway' v='yes' />
+    <tag k='trolley_wire' v='yes' />
+  </way>
+  <way id='31290734' action='modify' timestamp='2011-06-07T22:09:36Z' uid='133332' user='AMDmi3' visible='true' version='9' changeset='8374836'>
+    <nd ref='632214746' />
+    <nd ref='635942461' />
+    <nd ref='635942462' />
+    <nd ref='635942387' />
+    <nd ref='-1284' />
+    <nd ref='-1286' />
+    <tag k='addr:postcode' v='424000' />
+    <tag k='cladr:code' v='12000001000013700' />
+    <tag k='cladr:name' v='Ленинский' />
+    <tag k='cladr:suffix' v='Проспект' />
+    <tag k='highway' v='primary' />
+    <tag k='name' v='Ленинский проспект' />
+    <tag k='oneway' v='yes' />
+    <tag k='trolley_wire' v='yes' />
+  </way>
+  <way id='31481774' timestamp='2011-07-18T18:38:07Z' uid='73184' user='kolen' visible='true' version='8' changeset='8761431'>
+    <nd ref='353114109' />
+    <nd ref='1365747827' />
+    <nd ref='351899535' />
+    <nd ref='351899525' />
+    <tag k='addr:postcode' v='424000' />
+    <tag k='cladr:code' v='12000001000012000' />
+    <tag k='cladr:name' v='Красноармейская' />
+    <tag k='cladr:suffix' v='Улица' />
+    <tag k='highway' v='secondary' />
+    <tag k='name' v='Красноармейская улица' />
+    <tag k='oneway' v='yes' />
+    <tag k='trolley_wire' v='yes' />
+  </way>
+  <way id='31481776' timestamp='2011-04-02T21:20:00Z' uid='395228' user='Antisida' visible='true' version='5' changeset='7748545'>
+    <nd ref='351899525' />
+    <nd ref='351899520' />
+    <tag k='addr:postcode' v='424000' />
+    <tag k='bridge' v='yes' />
+    <tag k='cladr:code' v='12000001000012000' />
+    <tag k='cladr:name' v='Красноармейская' />
+    <tag k='cladr:suffix' v='Улица' />
+    <tag k='highway' v='secondary' />
+    <tag k='name' v='Красноармейская улица' />
+    <tag k='oneway' v='true' />
+    <tag k='trolley_wire' v='yes' />
+  </way>
+  <way id='31481778' timestamp='2011-07-18T18:38:14Z' uid='73184' user='kolen' visible='true' version='14' changeset='8761431'>
+    <nd ref='351899520' />
+    <nd ref='355028912' />
+    <nd ref='1365747890' />
+    <nd ref='351899509' />
+    <tag k='addr:postcode' v='424038' />
+    <tag k='cladr:code' v='12000001000003400' />
+    <tag k='cladr:name' v='Воинов-Интернационалистов' />
+    <tag k='cladr:suffix' v='Улица' />
+    <tag k='highway' v='secondary' />
+    <tag k='name' v='улица Воинов-Интернационалистов' />
+    <tag k='oneway' v='true' />
+    <tag k='trolley_wire' v='yes' />
+  </way>
+  <way id='31483543' timestamp='2011-07-18T18:38:19Z' uid='73184' user='kolen' visible='true' version='16' changeset='8761431'>
+    <nd ref='640149374' />
+    <nd ref='413454274' />
+    <nd ref='1365747960' />
+    <nd ref='388341303' />
+    <nd ref='350532375' />
+    <nd ref='1274027162' />
+    <nd ref='1365747899' />
+    <nd ref='1274026898' />
+    <nd ref='324377268' />
+    <tag k='addr:postcode' v='424038' />
+    <tag k='cladr:code' v='12000001000008700' />
+    <tag k='cladr:name' v='Кирова' />
+    <tag k='cladr:suffix' v='Улица' />
+    <tag k='highway' v='secondary' />
+    <tag k='name' v='улица Кирова' />
+    <tag k='trolley_wire' v='yes' />
+  </way>
+  <way id='31746305' timestamp='2011-08-09T21:31:45Z' uid='73184' user='kolen' visible='true' version='15' changeset='8971774'>
+    <nd ref='324377268' />
+    <nd ref='355265843' />
+    <tag k='addr:postcode' v='424038' />
+    <tag k='cladr:code' v='12000001000008700' />
+    <tag k='cladr:name' v='Кирова' />
+    <tag k='cladr:suffix' v='Улица' />
+    <tag k='highway' v='secondary' />
+    <tag k='name' v='улица Кирова' />
+    <tag k='trolley_wire' v='yes' />
+  </way>
+  <way id='39178338' timestamp='2011-06-07T22:08:19Z' uid='133332' user='AMDmi3' visible='true' version='19' changeset='8374836'>
+    <nd ref='324169952' />
+    <nd ref='1219142328' />
+    <nd ref='911550621' />
+    <nd ref='1222486074' />
+    <nd ref='1222485968' />
+    <nd ref='976543270' />
+    <nd ref='1222485983' />
+    <nd ref='370452817' />
+    <nd ref='605039495' />
+    <nd ref='632360225' />
+    <nd ref='632360226' />
+    <nd ref='324169960' />
+    <nd ref='1222254839' />
+    <nd ref='1222254846' />
+    <nd ref='1243946589' />
+    <nd ref='635951128' />
+    <tag k='addr:postcode' v='424003' />
+    <tag k='cladr:code' v='12000001000026200' />
+    <tag k='cladr:name' v='Суворова' />
+    <tag k='cladr:suffix' v='Улица' />
+    <tag k='highway' v='tertiary' />
+    <tag k='name' v='улица Суворова' />
+    <tag k='trolley_wire' v='yes' />
+  </way>
+  <way id='42440506' timestamp='2011-04-02T21:19:32Z' uid='395228' user='Antisida' visible='true' version='9' changeset='7748545'>
+    <nd ref='353114111' />
+    <nd ref='353114109' />
+    <tag k='addr:postcode' v='424000' />
+    <tag k='cladr:code' v='12000001000012000' />
+    <tag k='cladr:name' v='Красноармейская' />
+    <tag k='cladr:suffix' v='Улица' />
+    <tag k='highway' v='secondary' />
+    <tag k='name' v='Красноармейская улица' />
+    <tag k='oneway' v='yes' />
+    <tag k='trolley_wire' v='yes' />
+  </way>
+  <way id='48522817' timestamp='2011-08-09T12:52:07Z' uid='73184' user='kolen' visible='true' version='10' changeset='8966917'>
+    <nd ref='324163048' />
+    <nd ref='639251730' />
+    <nd ref='1365747928' />
+    <nd ref='613061428' />
+    <nd ref='649176539' />
+    <nd ref='413410370' />
+    <nd ref='324379478' />
+    <nd ref='1365747926' />
+    <nd ref='323904576' />
+    <nd ref='639251731' />
+    <nd ref='705416990' />
+    <nd ref='413411505' />
+    <nd ref='416636331' />
+    <nd ref='1365747989' />
+    <nd ref='637694461' />
+    <tag k='addr:postcode' v='424000' />
+    <tag k='cladr:code' v='12000001000012000' />
+    <tag k='cladr:name' v='Красноармейская' />
+    <tag k='cladr:suffix' v='Улица' />
+    <tag k='highway' v='secondary' />
+    <tag k='lanes' v='4' />
+    <tag k='name' v='Красноармейская улица' />
+    <tag k='name:ru' v='ул. Красноармейская' />
+    <tag k='trolley_wire' v='yes' />
+  </way>
+  <way id='48522825' timestamp='2011-07-12T09:11:00Z' uid='73184' user='kolen' visible='true' version='7' changeset='8701154'>
+    <nd ref='351899496' />
+    <nd ref='352809258' />
+    <tag k='addr:postcode' v='424038' />
+    <tag k='cladr:code' v='12000001000003400' />
+    <tag k='cladr:name' v='Воинов-Интернационалистов' />
+    <tag k='cladr:suffix' v='Улица' />
+    <tag k='highway' v='secondary' />
+    <tag k='name' v='улица Воинов-Интернационалистов' />
+    <tag k='oneway' v='true' />
+    <tag k='trolley_wire' v='yes' />
+  </way>
+  <way id='49069412' timestamp='2010-04-04T17:41:45Z' uid='127494' user='chilin' visible='true' version='3' changeset='4325055'>
+    <nd ref='678855772' />
+    <nd ref='348131978' />
+    <nd ref='348131976' />
+    <tag k='highway' v='secondary' />
+    <tag k='oneway' v='yes' />
+  </way>
+  <way id='49711572' timestamp='2011-08-09T12:52:06Z' uid='73184' user='kolen' visible='true' version='10' changeset='8966917'>
+    <nd ref='637690627' />
+    <nd ref='324658738' />
+    <nd ref='1198958533' />
+    <nd ref='1365747857' />
+    <nd ref='1198958488' />
+    <nd ref='323904553' />
+    <nd ref='1365747860' />
+    <nd ref='1198958502' />
+    <nd ref='323904559' />
+    <nd ref='639251726' />
+    <nd ref='639251727' />
+    <nd ref='323904563' />
+    <nd ref='639251728' />
+    <nd ref='639251729' />
+    <nd ref='324163048' />
+    <tag k='addr:postcode' v='424000' />
+    <tag k='cladr:code' v='12000001000012000' />
+    <tag k='cladr:name' v='Красноармейская' />
+    <tag k='cladr:suffix' v='Улица' />
+    <tag k='highway' v='secondary' />
+    <tag k='lanes' v='4' />
+    <tag k='name' v='Красноармейская улица' />
+    <tag k='name:ru' v='ул. Красноармейская' />
+    <tag k='trolley_wire' v='yes' />
+  </way>
+  <way id='49745228' timestamp='2011-05-07T13:50:49Z' uid='235335' user='Art&apos;y' visible='true' version='13' changeset='8073668'>
+    <nd ref='635942387' />
+    <nd ref='323947563' />
+    <nd ref='355265830' />
+    <tag k='addr:postcode' v='424000' />
+    <tag k='cladr:code' v='12000001000013700' />
+    <tag k='cladr:name' v='Ленинский' />
+    <tag k='cladr:suffix' v='Проспект' />
+    <tag k='highway' v='primary' />
+    <tag k='name' v='Ленинский проспект' />
+    <tag k='trolley_wire' v='yes' />
+  </way>
+  <way id='49745233' timestamp='2011-07-18T18:38:11Z' uid='73184' user='kolen' visible='true' version='9' changeset='8761431'>
+    <nd ref='632214754' />
+    <nd ref='666983796' />
+    <nd ref='632214756' />
+    <nd ref='632214758' />
+    <nd ref='632214757' />
+    <nd ref='632214746' />
+    <tag k='highway' v='primary' />
+    <tag k='oneway' v='yes' />
+    <tag k='trolley_wire' v='yes' />
+  </way>
+  <way id='49769210' timestamp='2011-06-07T22:08:14Z' uid='133332' user='AMDmi3' visible='true' version='7' changeset='8374836'>
+    <nd ref='635916796' />
+    <nd ref='295855593' />
+    <nd ref='295855581' />
+    <nd ref='348131977' />
+    <nd ref='635916910' />
+    <nd ref='678855773' />
+    <tag k='addr:postcode' v='424000' />
+    <tag k='cladr:code' v='12000001000016000' />
+    <tag k='cladr:name' v='Карла Маркса' />
+    <tag k='cladr:suffix' v='Улица' />
+    <tag k='highway' v='primary' />
+    <tag k='name' v='улица Карла Маркса' />
+    <tag k='oneway' v='yes' />
+    <tag k='trolley_wire' v='yes' />
+  </way>
+  <way id='49770673' timestamp='2011-07-18T18:38:21Z' uid='73184' user='kolen' visible='true' version='16' changeset='8761431'>
+    <nd ref='632360020' />
+    <nd ref='702791299' />
+    <nd ref='1365747978' />
+    <nd ref='370452818' />
+    <nd ref='1000822696' />
+    <nd ref='324178964' />
+    <tag k='addr:postcode' v='424006' />
+    <tag k='cladr:code' v='12000001000019900' />
+    <tag k='cladr:name' v='Панфилова' />
+    <tag k='cladr:suffix' v='Улица' />
+    <tag k='highway' v='secondary' />
+    <tag k='name' v='улица Панфилова' />
+    <tag k='trolley_wire' v='yes' />
+  </way>
+  <way id='49852264' timestamp='2011-04-24T08:16:45Z' uid='427187' user='Gordeich' visible='true' version='5' changeset='7950229'>
+    <nd ref='326066941' />
+    <nd ref='324177166' />
+    <tag k='addr:postcode' v='424000' />
+    <tag k='cladr:code' v='12000001000013700' />
+    <tag k='cladr:name' v='Ленинский' />
+    <tag k='cladr:suffix' v='Проспект' />
+    <tag k='highway' v='primary' />
+    <tag k='name' v='Ленинский проспект' />
+    <tag k='trolley_wire' v='yes' />
+  </way>
+  <way id='50077980' timestamp='2011-06-07T22:08:46Z' uid='133332' user='AMDmi3' visible='true' version='4' changeset='8374836'>
+    <nd ref='324177174' />
+    <nd ref='295855566' />
+    <tag k='addr:postcode' v='424000' />
+    <tag k='cladr:code' v='12000001000013700' />
+    <tag k='cladr:name' v='Ленинский' />
+    <tag k='cladr:suffix' v='Проспект' />
+    <tag k='highway' v='primary' />
+    <tag k='name' v='Ленинский проспект' />
+    <tag k='trolley_wire' v='yes' />
+  </way>
+  <way id='50077981' timestamp='2011-06-07T22:09:27Z' uid='133332' user='AMDmi3' visible='true' version='4' changeset='8374836'>
+    <nd ref='348131040' />
+    <nd ref='632490968' />
+    <nd ref='632490970' />
+    <nd ref='348131041' />
+    <nd ref='632490976' />
+    <nd ref='348131037' />
+    <tag k='addr:postcode' v='424000' />
+    <tag k='cladr:code' v='12000001000013700' />
+    <tag k='cladr:name' v='Ленинский' />
+    <tag k='cladr:suffix' v='Проспект' />
+    <tag k='highway' v='primary' />
+    <tag k='name' v='Ленинский проспект' />
+    <tag k='oneway' v='yes' />
+    <tag k='trolley_wire' v='yes' />
+  </way>
+  <way id='50078696' timestamp='2011-07-29T08:21:30Z' uid='437435' user='Jenya' visible='true' version='13' changeset='8861003'>
+    <nd ref='635942386' />
+    <nd ref='1187082383' />
+    <nd ref='635942391' />
+    <nd ref='1187109381' />
+    <nd ref='1365747863' />
+    <nd ref='635942394' />
+    <nd ref='1377363528' />
+    <nd ref='666937040' />
+    <nd ref='1274026914' />
+    <nd ref='1365747861' />
+    <nd ref='635942395' />
+    <tag k='addr:postcode' v='424030' />
+    <tag k='cladr:code' v='12000001000013600' />
+    <tag k='cladr:name' v='Лебедева' />
+    <tag k='cladr:suffix' v='Улица' />
+    <tag k='highway' v='primary' />
+    <tag k='name' v='улица Лебедева' />
+    <tag k='trolley_wire' v='yes' />
+  </way>
+  <way id='50078697' timestamp='2011-05-07T13:50:29Z' uid='235335' user='Art&apos;y' visible='true' version='3' changeset='8073668'>
+    <nd ref='635942386' />
+    <nd ref='635942397' />
+    <nd ref='635942398' />
+    <nd ref='635942399' />
+    <nd ref='632214754' />
+    <tag k='highway' v='primary' />
+    <tag k='oneway' v='yes' />
+    <tag k='trolley_wire' v='yes' />
+  </way>
+  <way id='50163496' timestamp='2011-07-18T18:38:09Z' uid='73184' user='kolen' visible='true' version='8' changeset='8761431'>
+    <nd ref='637690627' />
+    <nd ref='637690633' />
+    <nd ref='648828492' />
+    <nd ref='1365747901' />
+    <nd ref='327531369' />
+    <tag k='addr:postcode' v='424000' />
+    <tag k='cladr:code' v='12000001000012000' />
+    <tag k='cladr:name' v='Красноармейская' />
+    <tag k='cladr:suffix' v='Улица' />
+    <tag k='highway' v='secondary' />
+    <tag k='name' v='Красноармейская улица' />
+    <tag k='oneway' v='yes' />
+    <tag k='trolley_wire' v='yes' />
+  </way>
+  <way id='50163903' timestamp='2011-08-09T12:52:08Z' uid='73184' user='kolen' visible='true' version='4' changeset='8966917'>
+    <nd ref='324160684' />
+    <nd ref='637694498' />
+    <nd ref='637694502' />
+    <nd ref='637694505' />
+    <nd ref='637694508' />
+    <nd ref='637694461' />
+    <tag k='addr:postcode' v='424000' />
+    <tag k='cladr:code' v='12000001000012000' />
+    <tag k='cladr:name' v='Красноармейская' />
+    <tag k='cladr:suffix' v='Улица' />
+    <tag k='highway' v='secondary' />
+    <tag k='lanes' v='2' />
+    <tag k='name' v='Красноармейская улица' />
+    <tag k='name:ru' v='ул. Красноармейская' />
+    <tag k='oneway' v='yes' />
+    <tag k='trolley_wire' v='yes' />
+  </way>
+  <way id='50177293' timestamp='2011-07-12T08:37:09Z' uid='73184' user='kolen' visible='true' version='7' changeset='8700906'>
+    <nd ref='335945606' />
+    <nd ref='327531339' />
+    <tag k='addr:postcode' v='424003' />
+    <tag k='cladr:code' v='12000001000001500' />
+    <tag k='cladr:name' v='Баумана' />
+    <tag k='cladr:suffix' v='Улица' />
+    <tag k='highway' v='secondary' />
+    <tag k='name' v='улица Баумана' />
+  </way>
+  <way id='50177294' timestamp='2011-07-18T18:38:17Z' uid='73184' user='kolen' visible='true' version='7' changeset='8761431'>
+    <nd ref='327531339' />
+    <nd ref='327531236' />
+    <nd ref='325771301' />
+    <nd ref='1365747937' />
+    <nd ref='705151329' />
+    <nd ref='325771277' />
+    <nd ref='637692571' />
+    <nd ref='324160687' />
+    <tag k='addr:postcode' v='424028' />
+    <tag k='alt_name' v='ул. Йывана Кырля' />
+    <tag k='cladr:code' v='12000001000013200' />
+    <tag k='cladr:name' v='Йывана Кырли' />
+    <tag k='cladr:suffix' v='Улица' />
+    <tag k='highway' v='secondary' />
+    <tag k='name' v='улица Йывана Кырли' />
+    <tag k='oneway' v='yes' />
+  </way>
+  <way id='52463985' timestamp='2011-07-18T18:38:14Z' uid='73184' user='kolen' visible='true' version='5' changeset='8761431'>
+    <nd ref='351899509' />
+    <nd ref='351899503' />
+    <nd ref='1365747904' />
+    <nd ref='644538013' />
+    <nd ref='351899496' />
+    <tag k='addr:postcode' v='424038' />
+    <tag k='cladr:code' v='12000001000003400' />
+    <tag k='cladr:name' v='Воинов-Интернационалистов' />
+    <tag k='cladr:suffix' v='Улица' />
+    <tag k='highway' v='secondary' />
+    <tag k='name' v='улица Воинов-Интернационалистов' />
+    <tag k='oneway' v='true' />
+    <tag k='trolley_wire' v='yes' />
+  </way>
+  <way id='52463988' timestamp='2011-07-18T18:38:11Z' uid='73184' user='kolen' visible='true' version='6' changeset='8761431'>
+    <nd ref='644538001' />
+    <nd ref='1356980261' />
+    <nd ref='1365747984' />
+    <nd ref='595706940' />
+    <nd ref='295855545' />
+    <nd ref='911637597' />
+    <nd ref='354585191' />
+    <nd ref='1365747869' />
+    <nd ref='295855546' />
+    <nd ref='1365747872' />
+    <nd ref='324177177' />
+    <nd ref='635932184' />
+    <nd ref='353005154' />
+    <nd ref='348131040' />
+    <tag k='addr:postcode' v='424000' />
+    <tag k='cladr:code' v='12000001000013700' />
+    <tag k='cladr:name' v='Ленинский' />
+    <tag k='cladr:suffix' v='Проспект' />
+    <tag k='highway' v='primary' />
+    <tag k='name' v='Ленинский проспект' />
+    <tag k='trolley_wire' v='yes' />
+  </way>
+  <way id='52463992' timestamp='2011-07-29T08:21:31Z' uid='437435' user='Jenya' visible='true' version='13' changeset='8861003'>
+    <nd ref='635942395' />
+    <nd ref='1365747950' />
+    <nd ref='1365747957' />
+    <nd ref='1377363531' />
+    <nd ref='959553164' />
+    <nd ref='1365747848' />
+    <nd ref='703065270' />
+    <nd ref='1365747851' />
+    <nd ref='885298231' />
+    <nd ref='702300877' />
+    <nd ref='703065275' />
+    <nd ref='650035908' />
+    <nd ref='703065274' />
+    <nd ref='1365747823' />
+    <nd ref='388341294' />
+    <nd ref='1365747826' />
+    <nd ref='650035942' />
+    <nd ref='666937051' />
+    <tag k='addr:postcode' v='424030' />
+    <tag k='cladr:code' v='12000001000004500' />
+    <tag k='cladr:name' v='Героев Сталинградской Битвы' />
+    <tag k='cladr:suffix' v='Улица' />
+    <tag k='highway' v='tertiary' />
+    <tag k='name' v='улица Героев Сталинградской Битвы' />
+    <tag k='trolley_wire' v='yes' />
+  </way>
+  <way id='52463994' timestamp='2011-07-18T18:38:10Z' uid='73184' user='kolen' visible='true' version='8' changeset='8761431'>
+    <nd ref='355265830' />
+    <nd ref='1365747944' />
+    <nd ref='1241841940' />
+    <nd ref='635946514' />
+    <nd ref='1241849910' />
+    <nd ref='635946516' />
+    <nd ref='635946518' />
+    <nd ref='1365747981' />
+    <nd ref='644538000' />
+    <nd ref='635946521' />
+    <tag k='addr:postcode' v='424000' />
+    <tag k='cladr:code' v='12000001000013700' />
+    <tag k='cladr:name' v='Ленинский' />
+    <tag k='cladr:suffix' v='Проспект' />
+    <tag k='highway' v='primary' />
+    <tag k='name' v='Ленинский проспект' />
+    <tag k='trolley_wire' v='yes' />
+  </way>
+  <way id='52463998' timestamp='2011-07-18T18:38:20Z' uid='73184' user='kolen' visible='true' version='8' changeset='8761431'>
+    <nd ref='640149374' />
+    <nd ref='324393853' />
+    <nd ref='1365747847' />
+    <nd ref='324393854' />
+    <nd ref='1365747883' />
+    <nd ref='1365747879' />
+    <nd ref='647098001' />
+    <nd ref='950795903' />
+    <nd ref='666882093' />
+    <tag k='addr:postcode' v='424030' />
+    <tag k='cladr:code' v='12000001000017000' />
+    <tag k='cladr:name' v='Мира' />
+    <tag k='cladr:suffix' v='Улица' />
+    <tag k='highway' v='primary' />
+    <tag k='name' v='улица Мира' />
+    <tag k='trolley_wire' v='yes' />
+  </way>
+  <way id='52463999' timestamp='2011-05-26T12:15:45Z' uid='460256' user='domrachev' visible='true' version='7' changeset='8253039'>
+    <nd ref='666882093' />
+    <nd ref='666882097' />
+    <tag k='addr:postcode' v='424030' />
+    <tag k='cladr:code' v='12000001000017000' />
+    <tag k='cladr:name' v='Мира' />
+    <tag k='cladr:suffix' v='Улица' />
+    <tag k='highway' v='primary' />
+    <tag k='name' v='улица Мира' />
+    <tag k='trolley_wire' v='yes' />
+  </way>
+  <way id='55443725' timestamp='2011-04-04T15:26:35Z' uid='395228' user='Antisida' visible='true' version='5' changeset='7766037'>
+    <nd ref='632360023' />
+    <nd ref='728227562' />
+    <nd ref='632360020' />
+    <tag k='addr:postcode' v='424000' />
+    <tag k='cladr:code' v='12000001000020200' />
+    <tag k='cladr:name' v='Первомайская' />
+    <tag k='cladr:suffix' v='Улица' />
+    <tag k='highway' v='tertiary' />
+    <tag k='name' v='Первомайская улица' />
+  </way>
+  <way id='56015203' timestamp='2011-07-18T18:38:09Z' uid='73184' user='kolen' visible='true' version='6' changeset='8761431'>
+    <nd ref='327531369' />
+    <nd ref='327531384' />
+    <nd ref='1138883760' />
+    <nd ref='1365747856' />
+    <nd ref='1138883832' />
+    <nd ref='1138883782' />
+    <nd ref='327531392' />
+    <tag k='addr:postcode' v='424000' />
+    <tag k='cladr:code' v='12000001000012000' />
+    <tag k='cladr:name' v='Красноармейская' />
+    <tag k='cladr:suffix' v='Улица' />
+    <tag k='highway' v='secondary' />
+    <tag k='name' v='Красноармейская улица' />
+    <tag k='oneway' v='yes' />
+    <tag k='trolley_wire' v='yes' />
+  </way>
+  <way id='56629855' action='delete' timestamp='2011-07-18T18:38:17Z' uid='73184' user='kolen' visible='true' version='9' changeset='8761431'>
+    <tag k='highway' v='secondary' />
+    <tag k='name' v='улица Йывана Кырли' />
+    <tag k='trolley_wire' v='yes' />
+  </way>
+  <way id='56630949' timestamp='2011-07-18T18:38:18Z' uid='73184' user='kolen' visible='true' version='7' changeset='8761431'>
+    <nd ref='324177166' />
+    <nd ref='351703103' />
+    <nd ref='702981012' />
+    <nd ref='1365747940' />
+    <nd ref='364350536' />
+    <nd ref='351703095' />
+    <nd ref='1365747938' />
+    <nd ref='351703170' />
+    <nd ref='324369779' />
+    <nd ref='985999112' />
+    <nd ref='295855575' />
+    <nd ref='702791372' />
+    <nd ref='295855576' />
+    <nd ref='295855577' />
+    <nd ref='295855578' />
+    <nd ref='295855615' />
+    <nd ref='702791235' />
+    <nd ref='635916796' />
+    <tag k='addr:postcode' v='424000' />
+    <tag k='cladr:code' v='12000001000016000' />
+    <tag k='cladr:name' v='Карла Маркса' />
+    <tag k='cladr:suffix' v='Улица' />
+    <tag k='highway' v='primary' />
+    <tag k='name' v='улица Карла Маркса' />
+    <tag k='trolley_wire' v='yes' />
+  </way>
+  <way id='56694730' timestamp='2011-07-18T18:38:21Z' uid='73184' user='kolen' visible='true' version='7' changeset='8761431'>
+    <nd ref='620400417' />
+    <nd ref='1365747888' />
+    <nd ref='1365747887' />
+    <nd ref='348131976' />
+    <tag k='addr:postcode' v='424006' />
+    <tag k='cladr:code' v='12000001000019900' />
+    <tag k='cladr:name' v='Панфилова' />
+    <tag k='cladr:suffix' v='Улица' />
+    <tag k='highway' v='secondary' />
+    <tag k='name' v='улица Панфилова' />
+    <tag k='trolley_wire' v='yes' />
+  </way>
+  <way id='56694731' timestamp='2011-06-07T22:09:30Z' uid='133332' user='AMDmi3' visible='true' version='6' changeset='8374836'>
+    <nd ref='324178964' />
+    <nd ref='324177163' />
+    <nd ref='620400417' />
+    <tag k='addr:postcode' v='424006' />
+    <tag k='cladr:code' v='12000001000019900' />
+    <tag k='cladr:name' v='Панфилова' />
+    <tag k='cladr:suffix' v='Улица' />
+    <tag k='highway' v='secondary' />
+    <tag k='name' v='улица Панфилова' />
+    <tag k='trolley_wire' v='yes' />
+  </way>
+  <way id='56695607' timestamp='2011-07-18T18:38:22Z' uid='73184' user='kolen' visible='true' version='7' changeset='8761431'>
+    <nd ref='323936685' />
+    <nd ref='335947865' />
+    <nd ref='1139368074' />
+    <nd ref='708181768' />
+    <nd ref='1365747873' />
+    <nd ref='324628541' />
+    <tag k='addr:postcode' v='424000' />
+    <tag k='cladr:code' v='12000001000026100' />
+    <tag k='cladr:name' v='Строителей' />
+    <tag k='cladr:suffix' v='Улица' />
+    <tag k='highway' v='primary' />
+    <tag k='name' v='улица Строителей' />
+    <tag k='trolley_wire' v='yes' />
+  </way>
+  <way id='56695608' timestamp='2011-05-30T05:20:46Z' uid='460256' user='domrachev' visible='true' version='5' changeset='8288570'>
+    <nd ref='323936685' />
+    <nd ref='603023898' />
+    <nd ref='603023899' />
+    <nd ref='603023900' />
+    <nd ref='603023901' />
+    <nd ref='324786428' />
+    <nd ref='335945607' />
+    <tag k='addr:postcode' v='424000' />
+    <tag k='cladr:code' v='12000001000016500' />
+    <tag k='cladr:name' v='Машиностроителей' />
+    <tag k='cladr:suffix' v='Улица' />
+    <tag k='highway' v='tertiary' />
+    <tag k='name' v='улица Машиностроителей' />
+    <tag k='trolley_wire' v='yes' />
+  </way>
+  <way id='56701078' timestamp='2011-07-18T18:38:08Z' uid='73184' user='kolen' visible='true' version='5' changeset='8761431'>
+    <nd ref='327531392' />
+    <nd ref='1365747837' />
+    <nd ref='327531402' />
+    <nd ref='959548862' />
+    <nd ref='353114111' />
+    <tag k='addr:postcode' v='424000' />
+    <tag k='cladr:code' v='12000001000012000' />
+    <tag k='cladr:name' v='Красноармейская' />
+    <tag k='cladr:suffix' v='Улица' />
+    <tag k='highway' v='secondary' />
+    <tag k='name' v='Красноармейская улица' />
+    <tag k='oneway' v='yes' />
+    <tag k='trolley_wire' v='yes' />
+  </way>
+  <way id='56701082' timestamp='2011-07-18T18:38:22Z' uid='73184' user='kolen' visible='true' version='5' changeset='8761431'>
+    <nd ref='324628541' />
+    <nd ref='1365747987' />
+    <tag k='addr:postcode' v='424000' />
+    <tag k='cladr:code' v='12000001000026100' />
+    <tag k='cladr:name' v='Строителей' />
+    <tag k='cladr:suffix' v='Улица' />
+    <tag k='highway' v='primary' />
+    <tag k='name' v='улица Строителей' />
+    <tag k='trolley_wire' v='yes' />
+  </way>
+  <way id='108181193' timestamp='2011-04-12T05:37:25Z' uid='432362' user='travoltino' visible='true' version='1' changeset='7839339'>
+    <nd ref='632360023' />
+    <nd ref='632360037' />
+    <nd ref='632360038' />
+    <nd ref='325196157' />
+    <tag k='highway' v='tertiary' />
+    <tag k='oneway' v='yes' />
+    <tag k='ref' v='Герцена улица' />
+    <tag k='trolley_wire' v='yes' />
+  </way>
+  <way id='108181194' timestamp='2011-04-12T05:37:25Z' uid='432362' user='travoltino' visible='true' version='1' changeset='7839339'>
+    <nd ref='325196157' />
+    <nd ref='635951105' />
+    <nd ref='635951106' />
+    <nd ref='635951128' />
+    <tag k='highway' v='tertiary' />
+    <tag k='oneway' v='yes' />
+    <tag k='trolley_wire' v='yes' />
+  </way>
+  <way id='114939125' timestamp='2011-07-18T18:38:20Z' uid='73184' user='kolen' visible='true' version='2' changeset='8761431'>
+    <nd ref='666882097' />
+    <nd ref='1365747875' />
+    <nd ref='324393860' />
+    <nd ref='324393864' />
+    <nd ref='581201358' />
+    <nd ref='581201354' />
+    <nd ref='324393868' />
+    <nd ref='1365747972' />
+    <nd ref='1365747965' />
+    <nd ref='666937051' />
+    <tag k='addr:postcode' v='424030' />
+    <tag k='cladr:code' v='12000001000017000' />
+    <tag k='cladr:name' v='Мира' />
+    <tag k='cladr:suffix' v='Улица' />
+    <tag k='highway' v='primary' />
+    <tag k='name' v='улица Мира' />
+    <tag k='trolley_wire' v='yes' />
+  </way>
+  <way id='115584971' action='modify' timestamp='2011-07-18T18:38:20Z' uid='73184' user='kolen' visible='true' version='2' changeset='8761431'>
+    <nd ref='335945607' />
+    <nd ref='603639794' />
+    <nd ref='603639795' />
+    <nd ref='603639796' />
+    <nd ref='324668446' />
+    <nd ref='335945603' />
+    <nd ref='1365747841' />
+    <nd ref='324169952' />
+    <nd ref='-1288' />
+    <nd ref='335945607' />
+    <tag k='addr:postcode' v='424000' />
+    <tag k='cladr:code' v='12000001000016500' />
+    <tag k='cladr:name' v='Машиностроителей' />
+    <tag k='cladr:suffix' v='Улица' />
+    <tag k='highway' v='tertiary' />
+    <tag k='name' v='улица Машиностроителей' />
+    <tag k='trolley_wire' v='yes' />
+  </way>
+  <way id='121374813' timestamp='2011-07-12T09:10:44Z' uid='73184' user='kolen' visible='true' version='1' changeset='8701154'>
+    <nd ref='635946521' />
+    <nd ref='635946523' />
+    <tag k='addr:postcode' v='424000' />
+    <tag k='cladr:code' v='12000001000013700' />
+    <tag k='cladr:name' v='Ленинский' />
+    <tag k='cladr:suffix' v='Проспект' />
+    <tag k='highway' v='primary' />
+    <tag k='name' v='Ленинский проспект' />
+    <tag k='trolley_wire' v='yes' />
+  </way>
+  <way id='121374814' timestamp='2011-07-12T09:10:44Z' uid='73184' user='kolen' visible='true' version='1' changeset='8701154'>
+    <nd ref='635946523' />
+    <nd ref='1356980258' />
+    <nd ref='644538001' />
+    <tag k='addr:postcode' v='424000' />
+    <tag k='cladr:code' v='12000001000013700' />
+    <tag k='cladr:name' v='Ленинский' />
+    <tag k='cladr:suffix' v='Проспект' />
+    <tag k='highway' v='primary' />
+    <tag k='name' v='Ленинский проспект' />
+    <tag k='trolley_wire' v='yes' />
+  </way>
+  <way id='121374818' timestamp='2011-07-18T18:38:15Z' uid='73184' user='kolen' visible='true' version='2' changeset='8761431'>
+    <nd ref='352809258' />
+    <nd ref='644538015' />
+    <nd ref='1365747831' />
+    <nd ref='353048551' />
+    <nd ref='353048555' />
+    <nd ref='353048590' />
+    <nd ref='353048569' />
+    <nd ref='355265852' />
+    <nd ref='355265843' />
+    <tag k='addr:postcode' v='424038' />
+    <tag k='cladr:code' v='12000001000003400' />
+    <tag k='cladr:name' v='Воинов-Интернационалистов' />
+    <tag k='cladr:suffix' v='Улица' />
+    <tag k='highway' v='secondary' />
+    <tag k='name' v='улица Воинов-Интернационалистов' />
+    <tag k='oneway' v='true' />
+    <tag k='trolley_wire' v='yes' />
+  </way>
+  <way id='122154341' timestamp='2011-07-18T18:37:52Z' uid='73184' user='kolen' visible='true' version='1' changeset='8761431'>
+    <nd ref='348131037' />
+    <nd ref='632490922' />
+    <nd ref='348131038' />
+    <nd ref='348131039' />
+    <nd ref='632490929' />
+    <nd ref='295855556' />
+    <tag k='highway' v='secondary' />
+    <tag k='junction' v='roundabout' />
+    <tag k='name' v='Ленинский проспект' />
+    <tag k='oneway' v='yes' />
+    <tag k='trolley_wire' v='yes' />
+  </way>
+  <way id='122154344' timestamp='2011-07-30T12:49:27Z' uid='437435' user='Jenya' visible='true' version='3' changeset='8871911'>
+    <nd ref='1365747987' />
+    <nd ref='1378780455' />
+    <nd ref='1365747906' />
+    <nd ref='325216060' />
+    <nd ref='1376997353' />
+    <nd ref='324169712' />
+    <nd ref='1365747942' />
+    <nd ref='324169723' />
+    <nd ref='324169732' />
+    <nd ref='324160729' />
+    <tag k='addr:postcode' v='424000' />
+    <tag k='cladr:code' v='12000001000026100' />
+    <tag k='cladr:name' v='Строителей' />
+    <tag k='cladr:suffix' v='Улица' />
+    <tag k='highway' v='primary' />
+    <tag k='name' v='улица Строителей' />
+    <tag k='trolley_wire' v='yes' />
+  </way>
+  <way id='122154345' timestamp='2011-07-18T18:37:53Z' uid='73184' user='kolen' visible='true' version='1' changeset='8761431'>
+    <nd ref='1365747918' />
+    <nd ref='1365747921' />
+    <nd ref='1365747923' />
+    <tag k='name' v='улица Транспортная' />
+    <tag k='public_transport' v='platform' />
+  </way>
+  <relation id='380499' action='modify' timestamp='2011-07-18T18:38:03Z' uid='73184' user='kolen' visible='true' version='14' changeset='8761431'>
+    <member type='node' ref='1365747987' role='stop' />
+    <member type='node' ref='1251026055' role='platform' />
+    <member type='node' ref='1365747942' role='stop' />
+    <member type='node' ref='1158703123' role='platform' />
+    <member type='node' ref='1365747910' role='stop' />
+    <member type='node' ref='1158709116' role='platform' />
+    <member type='node' ref='1365747932' role='stop' />
+    <member type='node' ref='1158709982' role='platform' />
+    <member type='node' ref='1365747937' role='stop' />
+    <member type='node' ref='621962640' role='platform' />
+    <member type='node' ref='1365747989' role='stop' />
+    <member type='way' ref='122154345' role='platform' />
+    <member type='node' ref='1365747928' role='stop' />
+    <member type='node' ref='608586105' role='platform' />
+    <member type='node' ref='1365747857' role='stop' />
+    <member type='node' ref='610488735' role='platform' />
+    <member type='node' ref='1365747901' role='stop' />
+    <member type='node' ref='324630648' role='platform' />
+    <member type='node' ref='1365747856' role='stop' />
+    <member type='node' ref='364338408' role='platform' />
+    <member type='node' ref='1365747837' role='stop' />
+    <member type='node' ref='353048535' role='platform' />
+    <member type='node' ref='1365747827' role='stop' />
+    <member type='node' ref='353048538' role='platform' />
+    <member type='node' ref='1365747890' role='stop' />
+    <member type='node' ref='355028911' role='platform' />
+    <member type='node' ref='1365747904' role='stop' />
+    <member type='node' ref='353048541' role='platform' />
+    <member type='node' ref='1365747831' role='stop' />
+    <member type='node' ref='350532227' role='platform' />
+    <member type='node' ref='1365747899' role='stop' />
+    <member type='node' ref='356864968' role='platform' />
+    <member type='node' ref='1365747847' role='stop' />
+    <member type='node' ref='1365747845' role='platform' />
+    <member type='node' ref='1365747883' role='stop' />
+    <member type='node' ref='702110976' role='platform' />
+    <member type='node' ref='1365747875' role='stop' />
+    <member type='node' ref='702110956' role='platform' />
+    <member type='node' ref='1365747972' role='stop' />
+    <member type='node' ref='1365747970' role='platform' />
+    <member type='node' ref='1365747826' role='stop' />
+    <member type='node' ref='1323385642' role='platform' />
+    <member type='node' ref='1365747851' role='stop' />
+    <member type='node' ref='1323393248' role='platform' />
+    <member type='node' ref='1365747957' role='stop' />
+    <member type='node' ref='1323393249' role='platform' />
+    <member type='node' ref='1365747861' role='stop' />
+    <member type='node' ref='370591954' role='platform' />
+    <member type='node' ref='1365747863' role='stop' />
+    <member type='node' ref='1365747867' role='platform' />
+    <member type='node' ref='1365747944' role='stop' />
+    <member type='node' ref='1365747947' role='platform' />
+    <member type='node' ref='1365747984' role='stop' />
+    <member type='node' ref='350531982' role='platform' />
+    <member type='node' ref='1365747872' role='stop' />
+    <member type='node' ref='350532001' role='platform' />
+    <member type='node' ref='1365747940' role='stop' />
+    <member type='node' ref='350532029' role='platform' />
+    <member type='node' ref='1365747888' role='stop' />
+    <member type='node' ref='350532063' role='platform' />
+    <member type='node' ref='1365747978' role='stop' />
+    <member type='node' ref='350532084' role='platform' />
+    <member type='way' ref='122154344' role='' />
+    <member type='way' ref='50177293' role='' />
+    <member type='way' ref='50177294' role='' />
+    <member type='way' ref='29412002' role='' />
+    <member type='way' ref='50163903' role='' />
+    <member type='way' ref='48522817' role='' />
+    <member type='way' ref='49711572' role='' />
+    <member type='way' ref='50163496' role='' />
+    <member type='way' ref='56015203' role='' />
+    <member type='way' ref='56701078' role='' />
+    <member type='way' ref='42440506' role='' />
+    <member type='way' ref='31481774' role='' />
+    <member type='way' ref='31481776' role='' />
+    <member type='way' ref='31481778' role='' />
+    <member type='way' ref='52463985' role='' />
+    <member type='way' ref='48522825' role='' />
+    <member type='way' ref='121374818' role='' />
+    <member type='way' ref='31746305' role='' />
+    <member type='way' ref='31483543' role='' />
+    <member type='way' ref='52463998' role='' />
+    <member type='way' ref='52463999' role='' />
+    <member type='way' ref='114939125' role='' />
+    <member type='way' ref='52463992' role='' />
+    <member type='way' ref='50078696' role='' />
+    <member type='way' ref='50078697' role='' />
+    <member type='way' ref='49745233' role='' />
+    <member type='way' ref='31290734' role='' />
+    <member type='way' ref='49745228' role='' />
+    <member type='way' ref='52463994' role='' />
+    <member type='way' ref='121374813' role='' />
+    <member type='way' ref='121374814' role='' />
+    <member type='way' ref='52463988' role='' />
+    <member type='way' ref='50077981' role='' />
+    <member type='way' ref='122154341' role='' />
+    <member type='way' ref='31290732' role='' />
+    <member type='way' ref='50077980' role='' />
+    <member type='way' ref='29596438' role='' />
+    <member type='way' ref='49852264' role='' />
+    <member type='way' ref='56630949' role='' />
+    <member type='way' ref='49769210' role='' />
+    <member type='way' ref='26991988' role='' />
+    <member type='way' ref='49069412' role='' />
+    <member type='way' ref='56694730' role='' />
+    <member type='way' ref='56694731' role='' />
+    <member type='way' ref='49770673' role='' />
+    <member type='way' ref='55443725' role='' />
+    <member type='way' ref='108181193' role='' />
+    <member type='way' ref='108181194' role='' />
+    <member type='way' ref='39178338' role='' />
+    <member type='way' ref='115584971' role='' />
+    <member type='way' ref='56695608' role='' />
+    <member type='way' ref='56695607' role='' />
+    <member type='way' ref='56701082' role='' />
+    <tag k='name' v='Профессиональная – микрорайон &quot;Сомбатхей&quot;' />
+    <tag k='note' v='Правая сторона' />
+    <tag k='ref' v='22' />
+    <tag k='route' v='bus' />
+    <tag k='type' v='route' />
+  </relation>
+</osm>
