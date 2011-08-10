@@ -45,17 +45,16 @@ def check_ways(check):
                             wdb[-2][1] = "backward"
                         else:
                             wdb[-2][1] = "forward"
+                elif last_end_2:
+                    # Continue with trying alternative direction
+                    last_end = last_end_2
+                    last_end_2 = None
+                    continue
                 else:
-                    if last_end_2:
-                        # Continue with trying alternative direction
-                        last_end = last_end_2
-                        last_end_2 = None
-                        continue
-                    else:
-                        # Mark previous way as break-after
-                        wdb[-2][2] = True
-                        last_end = None
-                        last_end_2 = None
+                    # Mark previous way as break-after
+                    wdb[-2][2] = True
+                    last_end = None
+                    last_end_2 = None
 
                 break
 
