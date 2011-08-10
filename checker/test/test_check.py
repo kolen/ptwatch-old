@@ -22,5 +22,5 @@ class TestCheck(TestCase):
         results = checker.Checker.check_route_variant(data[2][380499], [], "bus")
         self.assertEquals(["TOPO_BROKEN_ROUTE"], results.errors.keys())
         self.assertEquals([
-            1365747987L, 324160729L, 335945606L, 635942387L, -1286L, 324169952L, 335945607L,
+            1365747987L, 324160729L, 335945606L, -1286L, 635942387L, 324169952L, 335945607L,
             ], [e.id for e in results.errors["TOPO_BROKEN_ROUTE"].broken_nodes])
