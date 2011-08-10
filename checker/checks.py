@@ -55,8 +55,8 @@ def check_ways(check):
                 else:
                     # Mark previous way as break-after
                     wdb[-2][2] = True
-                    last_end = None
-                    last_end_2 = None
+                    last_end = member.nodes[0]
+                    last_end_2 = member.nodes[-1]
 
                 break
 
