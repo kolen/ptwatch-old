@@ -3,9 +3,7 @@ def check_ways(check):
     """
     Check ways for broken paths, fill check.ways_directions_breaks
     """
-    last_end = None
-    last_end_2 = None # Other possible end, if first way encountered.
-                      # After next way it will be reset
+    last_ends = None
     previous_member = None
 
     wdb = check.ways_directions_breaks
@@ -20,47 +18,43 @@ def check_ways(check):
 
         wdb.append([member, "unknown", False])
 
-        if not last_end:
-            last_end = member.nodes[0]
-            last_end_2 = member.nodes[-1]
+        if not last_ends:
+            last_ends = [member.nodes[0], member.nodes[-1]]
         else:
-            while True:
-                if member.nodes[0] == last_end:
+            matched = False
+            for end in last_ends:
+                if member.nodes[0] == end:
                     # Forward direction
-                    last_end = member.nodes[-1]
                     wdb[-1][1] = "forward"
+                    last_ends = [ member.nodes[-1] ]
+                    assert(not wdb[-2][2])
                     if wdb[-2][1] == "unknown":
-                        assert(not wdb[-2][2])
                         prev = wdb[-2][0]
                         if prev.nodes[-1] == member.nodes[0]:
                             wdb[-2][1] = "forward"
                         else:
                             wdb[-2][1] = "backward"
-                elif member.nodes[-1] == last_end:
+                    matched = True
+                    break
+                elif member.nodes[-1] == end:
                     # Backward direction
-                    last_end = member.nodes[0]
                     wdb[-1][1] = "backward"
+                    last_ends = [ member.nodes[0] ]
+                    assert(not wdb[-2][2])
                     if wdb[-2][1] == "unknown":
-                        assert(not wdb[-2][2])
                         prev = wdb[-2][0]
                         if prev.nodes[-1] == member.nodes[0]:
                             wdb[-2][1] = "backward"
                         else:
                             wdb[-2][1] = "forward"
-                elif last_end_2:
-                    # Continue with trying alternative direction
-                    last_end = last_end_2
-                    last_end_2 = None
-                    continue
-                else:
-                    # Mark previous way as break-after
-                    wdb[-2][2] = True
-                    last_end = member.nodes[0]
-                    last_end_2 = member.nodes[-1]
+                    matched = True
+                    break
 
-                break
+            if not matched:
+                # Mark previous way as break-after
+                wdb[-2][2] = True
+                last_ends = [member.nodes[0], member.nodes[-1]]
 
-            last_end_2 = None
 
     last_error = False
     for way, direction, breac in wdb:
@@ -78,13 +72,12 @@ def check_ways(check):
             e = check.add_error("TOPO_BROKEN_ROUTE")
             if direction == "forward":
                 e.broken_nodes.append(way.nodes[-1])
-                last_error = True
             elif direction == "backward":
                 e.broken_nodes.append(way.nodes[0])
-                last_error = True
             else:
                 e.broken_nodes.append(way.nodes[0])
                 e.broken_nodes.append(way.nodes[-1])
+            last_error = True
 
         for wc in way_checkers:
             wc(check, way, direction, breac)
