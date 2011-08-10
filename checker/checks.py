@@ -30,6 +30,7 @@ def check_ways(check):
                     last_end = member.nodes[-1]
                     wdb[-1][1] = "forward"
                     if wdb[-2][1] == "unknown":
+                        assert(not wdb[-2][2])
                         prev = wdb[-2][0]
                         if prev.nodes[-1] == member.nodes[0]:
                             wdb[-2][1] = "forward"
@@ -40,6 +41,7 @@ def check_ways(check):
                     last_end = member.nodes[0]
                     wdb[-1][1] = "backward"
                     if wdb[-2][1] == "unknown":
+                        assert(not wdb[-2][2])
                         prev = wdb[-2][0]
                         if prev.nodes[-1] == member.nodes[0]:
                             wdb[-2][1] = "backward"
@@ -62,6 +64,8 @@ def check_ways(check):
 
     last_error = False
     for way, direction, breac in wdb:
+        assert(True if breac else direction != "unknown")
+
         if last_error:
             last_error = False
             e = check.add_error("TOPO_BROKEN_ROUTE")
