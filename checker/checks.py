@@ -52,6 +52,7 @@ def check_ways(check):
                         last_end_2 = None
                         continue
                     else:
+                        # Mark previous way as break-after
                         wdb[-2][2] = True
                         last_end = None
                         last_end_2 = None
