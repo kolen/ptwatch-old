@@ -106,8 +106,9 @@ def check_stops_order(check):
         e = check.add_error("TOPO_STOPS_OUTSIDE_ROUTE")
         e.stops += [UnloadedOSMEntity('node', s) for s in stops_off_route]
 
-    stops_ids_listed = [wdb[0].osm_stop.id for wdb in check.stops_platforms]
-    print stop_ids_on_route, "\n-", stops_ids_listed
+    stops_ids_listed = [ x for x in [wdb[0].osm_stop.id for wdb in check.stops_platforms]
+                         if x not in stops_off_route ] # Remove stops found off route
+
     #assert(len(stop_ids_on_route) == len(stops_ids_listed))
     # Route can cross stop ways more than once so assertion is removed
 
