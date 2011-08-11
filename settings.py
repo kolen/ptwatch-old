@@ -1,5 +1,3 @@
-# Django settings for buschecker project.
-
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
@@ -111,7 +109,7 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.messages.middleware.MessageMiddleware',
 )
 
-ROOT_URLCONF = 'buschecker.urls'
+ROOT_URLCONF = 'ptwatch.urls'
 
 TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
