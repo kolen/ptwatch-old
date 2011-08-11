@@ -108,7 +108,13 @@ def check_stops_order(check):
 
     stops_ids_listed = [wdb[0].osm_stop.id for wdb in check.stops_platforms]
     print stop_ids_on_route, "\n-", stops_ids_listed
-    assert(len(stop_ids_on_route) == len(stops_ids_listed))
+    #assert(len(stop_ids_on_route) == len(stops_ids_listed))
+    # Route can cross stop ways more than once so assertion is removed
+
+    # Remove last stop if it is identical to first stop. It is almost always on looped
+    # routes
+    if stop_ids_on_route and stop_ids_on_route[-1] == stop_ids_on_route[0]:
+        del stop_ids_on_route[-1]
     if stops_ids_listed != stop_ids_on_route:
         check.add_error("TOPO_WRONG_STOPS_ORDER")
 
