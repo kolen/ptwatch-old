@@ -116,6 +116,7 @@ def check_stops_order(check):
     # routes
     if stop_ids_on_route and stop_ids_on_route[-1] == stop_ids_on_route[0]:
         del stop_ids_on_route[-1]
+
     if stops_ids_listed != stop_ids_on_route:
         check.add_error("TOPO_WRONG_STOPS_ORDER")
 
