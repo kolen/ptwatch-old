@@ -1,4 +1,9 @@
 
+class UnloadedOSMEntity():
+    def __init__(self, type, id):
+        self.type = type
+        self.id = id
+
 def check_ways(check):
     """
     Check ways for broken paths, fill check.ways_directions_breaks
@@ -82,6 +87,28 @@ def check_ways(check):
         for wc in way_checkers:
             wc(check, way, direction, breac)
 
+def check_stops_order(check):
+    stop_ids_on_route = []
+    for way, direction, breac in check.ways_directions_breaks:
+        stops_ids_on_way = [ node.id for node in way.nodes if node.id in check.stops_ids ]
+        if direction == "backward":
+            stops_ids_on_way.reverse()
+
+        stop_ids_on_route += stops_ids_on_way
+
+    stop_ids_on_route_set = set(stop_ids_on_route)
+    stops_off_route = check.stops_ids - stop_ids_on_route_set
+
+    if stops_off_route:
+        e = check.add_error("TOPO_STOPS_OUTSIDE_ROUTE")
+        e.stops += [UnloadedOSMEntity('node', s) for s in stops_off_route]
+
+    stops_ids_listed = [wdb[0].id for wdb in check.ways_directions_breaks]
+    print stop_ids_on_route, "\n-", stops_ids_listed
+    assert(len(stop_ids_on_route) == len(stops_ids_listed))
+    if stops_ids_listed != stop_ids_on_route:
+        check.add_error("TOPO_WRONG_STOPS_ORDER")
+
 def check_oneway(check, way, direction, breac):
     """
     Check if direction on one-way roads is correct
@@ -95,6 +122,6 @@ def check_oneway(check, way, direction, breac):
             if direction == 'forward':
                 check.add_error("TOPO_ONEWAY_WRONG_DIRECTION").wrong_direction_ways.append(way)
 
-checks = [check_ways]
+checks = [check_ways, check_stops_order]
 
 way_checkers = [check_oneway]

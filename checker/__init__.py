@@ -31,6 +31,7 @@ class Check:
         self.stops_reference = stops_reference
         self.route_type = route_type
         self.stops_platforms = []
+        self.stops_ids = set()
         self.ways_directions_breaks = [] # (way, direction, break_after)
         self.results = Results()
 
@@ -73,6 +74,7 @@ class Checker:
             if role in ("stop", "stop_exit_only", "stop_entry_only"):
                 if stop:
                     check.stops_platforms.append((stop, platform))
+                    check.stop_ids.add(stop.id)
                     stop, platform = None, None
                     check.add_error("TYPE_NO_PLATFORM_FOR_STOP")
                 stop = Stop(member)
@@ -82,6 +84,7 @@ class Checker:
                 else:
                     platform = Platform(member)
                     check.stops_platforms.append((stop, platform))
+                    check.stops_ids.add(stop.osm_stop.id)
                     stop, platform = None, None
             elif role == "":
                 if not found_ways:
