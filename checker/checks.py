@@ -94,6 +94,9 @@ def check_stops_order(check):
         if direction == "backward":
             stops_ids_on_way.reverse()
 
+        if (len(stops_ids_on_way) and len(stop_ids_on_route) and
+            stop_ids_on_route[-1] == stops_ids_on_way[0]):
+            del stop_ids_on_way[0]
         stop_ids_on_route += stops_ids_on_way
 
     stop_ids_on_route_set = set(stop_ids_on_route)
@@ -103,7 +106,7 @@ def check_stops_order(check):
         e = check.add_error("TOPO_STOPS_OUTSIDE_ROUTE")
         e.stops += [UnloadedOSMEntity('node', s) for s in stops_off_route]
 
-    stops_ids_listed = [wdb[0].id for wdb in check.ways_directions_breaks]
+    stops_ids_listed = [wdb[0].osm_stop.id for wdb in check.stops_platforms]
     print stop_ids_on_route, "\n-", stops_ids_listed
     assert(len(stop_ids_on_route) == len(stops_ids_listed))
     if stops_ids_listed != stop_ids_on_route:
