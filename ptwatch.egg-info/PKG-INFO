@@ -7,12 +7,6 @@ Author: UNKNOWN
 Author-email: UNKNOWN
 License: UNKNOWN
 Description: 
-        To run tests for checker:
-        
-        python -m unittest discover checker.test
-        
-        in root direcrory of project
-        
         
         0.0
         ---

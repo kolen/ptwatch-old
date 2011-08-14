@@ -1,6 +1,6 @@
 
 from unittest import TestCase
-from ptwatch.osm.loader import load
+from ptwatch.osm.xml_loader import load
 from ptwatch.checker import Checker
 
 class TestCheck(TestCase):

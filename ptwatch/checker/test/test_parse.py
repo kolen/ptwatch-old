@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 import unittest
-from ptwatch.osm.loader import load
+from ptwatch.osm.xml_loader import load
 
 class TestParse(unittest.TestCase):
     TEST_RESOURCES_DIR = "ptwatch/checker/test/resources"
