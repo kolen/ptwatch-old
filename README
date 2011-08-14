@@ -1,6 +1,0 @@
-
-To run tests for checker:
-
-python -m unittest discover checker.test
-
-in root direcrory of project
