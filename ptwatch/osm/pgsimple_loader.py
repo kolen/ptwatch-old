@@ -31,21 +31,30 @@ class LoadedEntitiesStore():
     def integrity_check(self):
         for node in self.nodes.itervalues():
             if node.lat is None or node.lon is None:
+                print "Node %s have invalid lat(%s) or lon(%s)" % (
+                    node, node.lat, node.lon
+                )
                 return False
         for way in self.ways.itervalues():
             if not way.nodes:
+                print "Way %s nodes is invalid: %s" % (way, way.nodes)
                 return False
         for relation in self.relations.itervalues():
             for role, member in relation.members:
                 if not member:
+                    print "Member of %s is invalid: %s" % (relation, member)
                     return False
 
             if member.type == "node":
                 if member.id not in self.nodes:
+                    print "Member of %s not in list of nodes" % relation
                     return False
             elif member.type == "way":
                 if member.id not in self.ways:
+                    print "Member of %s not in list of ways" % relation
                     return False
+
+        return True
 
 
 def load_relation(id):
