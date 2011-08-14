@@ -52,6 +52,10 @@ class TypeNoPlatformForStop(Error):
     title = "Stop have no platform"
     severity = "error"
 
+class TypeExtraPlatformForStop(Error):
+    title = "Extra platform"
+    severity = "error"
+
 class TypeWrongSorting(Error):
     title = "Wrong sorting"
     severity = "error"
