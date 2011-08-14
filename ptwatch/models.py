@@ -12,10 +12,10 @@ class Cities(PersistentMapping):
 
 class City(Persistent):
     def __init__(self):
-        name = ""
-        country = ""
-        osm_entities = PersistentList()
-        routes = RouteMasters
+        self.name = ""
+        self.country = ""
+        self.osm_entities = PersistentList()
+        self.route_masters = RouteMasters(self)
 
 class RouteMasters(Persistent):
     def __init__(self, city):
@@ -60,6 +60,14 @@ def appmaker(zodb_root):
         cities.__parent__ = app_root
         app_root['cities'] = cities
         zodb_root['app_root'] = app_root
+
+        c = City()
+        c.name = "Test City"
+        c.country = "Inner Nepal"
+        c.__parent__ = cities
+        c.__name__ = "Test City"
+        cities["Test City"] = c
+
         import transaction
         transaction.commit()
     return zodb_root['app_root']

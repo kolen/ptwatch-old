@@ -5,6 +5,10 @@
     <head>
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
         <title></title>
+
+		<script type="text/javascript" src="/static/js/jquery-1.6.2.min.js"></script>
+		<script type="text/javascript" src="/static_deform/scripts/deform.js"></script>
+		<link rel="stylesheet" href="/static_deform/css/form.css" type="text/css" />
     </head>
     <body>
 		<tal:block metal:define-slot="content">

@@ -15,6 +15,8 @@ requires = [
     'WebError',
     'psycopg2',
     'DBUtils',
+    'colander',
+    'deform',
     ]
 
 setup(name='ptwatch',
