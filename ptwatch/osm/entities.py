@@ -27,7 +27,7 @@ class Relation(Entity):
         self.tags = tags
         self.members = members
 
-class UnloadedObject(Entity):
+class UnloadedEntity(Entity):
     """
     OSM entity that exist as member of relation but not retrieved / not saved in xml
     """
@@ -50,6 +50,6 @@ class ParsedOsmData():
     def add_relation(self, id, tags, refs):
         self.relations[id] = Relation(id, tags, [
             (member_role, getattr(self, member_type + "s").get(member_id)
-                or UnloadedObject(member_type, member_id))
+                or UnloadedEntity(member_type, member_id))
             for member_id, member_type, member_role in refs
             ])
