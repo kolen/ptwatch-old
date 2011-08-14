@@ -28,6 +28,26 @@ class LoadedEntitiesStore():
         else:
             return d[id]
 
+    def integrity_check(self):
+        for node in self.nodes.itervalues():
+            if node.lat is None or node.lon is None:
+                return False
+        for way in self.ways.itervalues():
+            if not way.nodes:
+                return False
+        for relation in self.relations.itervalues():
+            for role, member in relation.members:
+                if not member:
+                    return False
+
+            if member.type == "node":
+                if member.id not in self.nodes:
+                    return False
+            elif member.type == "way":
+                if member.id not in self.ways:
+                    return False
+
+
 def load_relation(id):
     """
     Load relation from pgsimple OSM database, with nodes and ways included
@@ -92,5 +112,7 @@ def load_relation(id):
         w = store.ways[way_id]
         assert(w.id == way_id)
         w.tags[k] = v
+
+    assert(store.integrity_check())
 
     return Relation(id, rel_tags, members)
