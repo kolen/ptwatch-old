@@ -45,9 +45,9 @@ class Check:
 
 class Checker:
     @staticmethod
-    def check_route_variant(osm_relation, stops_reference, route_type):
+    def check_route(osm_relation, stops_reference, route_type):
         """
-        Check route variant and return resuls object.
+        Check route and return results object.
 
         osm_relation: osm relation object
         stops_reference: list of stop names
