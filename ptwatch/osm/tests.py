@@ -15,6 +15,7 @@ class TestLoad(OSMPGSQLTestCase):
                 self.assertIsInstance(member.lat, float)
                 self.assertIsInstance(member.lon, float)
             if role == 'way':
+                self.assertIsNotNone(member.nodes)
                 for role2, member2 in member.nodes:
                     self.assertIsInstance(member.lat, float)
                     self.assertIsInstance(member.lon, float)
