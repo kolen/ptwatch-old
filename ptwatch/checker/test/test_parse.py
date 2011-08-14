@@ -2,10 +2,10 @@
 # -*- coding: utf-8 -*-
 
 import unittest
-from osm.loader import load
+from ptwatch.osm.loader import load
 
 class TestParse(unittest.TestCase):
-    TEST_RESOURCES_DIR = "checker/test/resources"
+    TEST_RESOURCES_DIR = "ptwatch/checker/test/resources"
     def setUp(self):
         if not getattr(self, 'data', None):
             self.data = load(self.TEST_RESOURCES_DIR+"/yoshkar-ola_1.osm")

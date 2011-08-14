@@ -4,3 +4,5 @@
 *.pyc
 *.pyo
 *~
+/Data.fs*
+*.bak
