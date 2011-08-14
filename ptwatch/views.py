@@ -27,6 +27,13 @@ def route_add(context, request):
             colander.String(),
             description="Variant name",
             missing=u'')
+        osm_relation_id = colander.SchemaNode(
+            colander.Int(),
+            title="Openstreetmap Relation ID (type=route)",
+            description="Openstreetmap relation ID of this route variant, if "
+                "it exists in openstreetmap. Relation should have "
+                "type=route key.",
+            missing=None)
         stops = colander.SchemaNode(
             colander.String(),
             description="Stops, one stop name per line",
@@ -48,6 +55,13 @@ def route_add(context, request):
             colander.String(),
             description="Route name",
             missing=u'')
+        osm_relation_id = colander.SchemaNode(
+            colander.Int(),
+            title="Openstreetmap Relation ID (type=route_master)",
+            description="Openstreetmap relation ID of this route variant, if "
+                "it exists in openstreetmap. Relation should have "
+                "type=route key.",
+            missing=None)
         variants = VariantsSequence()
 
     schema = Schema()
