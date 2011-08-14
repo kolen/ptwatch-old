@@ -48,6 +48,9 @@ class Route(Persistent):
         self.stops = [] # Stops reference
 
         self.check_result = None
+        self.status = "empty" # empty, vintage, notice, warning, error
+        self.manual_status = "unknown" # unknown, checked, error
+        self.relation_not_found = False
 
 def appmaker(zodb_root):
     if not 'app_root' in zodb_root:
