@@ -24,5 +24,7 @@ def main(global_config, **settings):
         password=settings.get('osm_db_password', None),
         host=settings.get('osm_db_host', None),
     )
+    psycopg2.extensions.register_type(psycopg2.extensions.UNICODE)
+    psycopg2.extensions.register_type(psycopg2.extensions.UNICODEARRAY)
 
     return config.make_wsgi_app()

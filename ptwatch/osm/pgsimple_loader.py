@@ -16,11 +16,11 @@ class LoadedEntitiesStore():
         d = getattr(self, type+"s")
         if id not in d:
             if type == 'node':
-                e = Node(id)
+                e = Node(id, {})
             elif type == 'way':
-                e = Way(id)
+                e = Way(id, {})
             elif type == 'relation':
-                e = Relation(id)
+                e = Relation(id, {})
             else:
                 raise AttributeError("Invalid type '%s'" % type)
             d[id] = e
@@ -50,6 +50,7 @@ def load_relation(id):
     c.execute("select k, v from relation_tags where relation_id=%s", (id,))
     rel_tags = dict(c.fetchall())
 
+    # Load members of relation
     store = LoadedEntitiesStore()
     members = []
     types_map = dict(N='node', W='way', R='relation')
@@ -81,6 +82,7 @@ def load_relation(id):
         (",".join(nodes_ids)))
     for node_id, k, v in c.fetchall():
         n = store.nodes[node_id]
+        assert(n.id == node_id)
         n.tags[k] = v
 
     # Load tags for all ways
@@ -88,6 +90,7 @@ def load_relation(id):
         (",".join(ways_ids)))
     for way_id, k, v in c.fetchall():
         w = store.ways[way_id]
+        assert(w.id == way_id)
         w.tags[k] = v
 
     return Relation(id, rel_tags, members)

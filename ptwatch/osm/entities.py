@@ -5,7 +5,7 @@ class Entity:
 class Node(Entity):
     __slots__ = ["id", "tags", "lat", "lon"]
     type = "node"
-    def __init__(self, id, tags={}, lat=None, lon=None):
+    def __init__(self, id, tags=None, lat=None, lon=None):
         self.id = id
         self.tags = tags
         self.lat = lat
@@ -14,7 +14,7 @@ class Node(Entity):
 class Way(Entity):
     __slots__ = ["id", "tags", "nodes"]
     type = "way"
-    def __init__(self, id, tags={}, nodes=None):
+    def __init__(self, id, tags=None, nodes=None):
         self.id = id
         self.tags = tags
         self.nodes = nodes
@@ -22,7 +22,7 @@ class Way(Entity):
 class Relation(Entity):
     __slots__ = ["id", "tags", "members"]
     type = "relation"
-    def __init__(self, id, tags={}, members=None):
+    def __init__(self, id, tags=None, members=None):
         self.id = id
         self.tags = tags
         self.members = members # list of (role, member) tuples
