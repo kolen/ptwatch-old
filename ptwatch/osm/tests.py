@@ -27,3 +27,9 @@ class TestLoad(TestCase):
 
     def testLoad1(self):
         rel = pgsimple_loader.load_relation(380499)
+
+        self.assertEquals(dict(ref="22", route="bus", type="route"), rel.tags)
+        self.assertEquals(82, len(rel.members))
+        for role, member in rel.members:
+            if role == 'node':
+                self.assertMoreThan(50, member.lat)

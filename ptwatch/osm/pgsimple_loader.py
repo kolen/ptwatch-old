@@ -63,7 +63,7 @@ def load_relation(id):
             next
 
         entity = store.get_or_create(m_type, m_id)
-        members.append(entity)
+        members.append((m_role, entity))
 
     nodes_ids = set(str(node.id) for node in store.nodes.itervalues())
     ways_ids = set(str(way.id) for way in store.ways.itervalues())
