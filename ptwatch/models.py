@@ -3,6 +3,8 @@ from persistent import Persistent
 from persistent.list import PersistentList
 from persistent.mapping import PersistentMapping
 
+allowed_types = ['bus', 'trolleybus', 'share_taxi', 'tram']
+
 class PTWatch(PersistentMapping):
     __name__ = None
     __parent__ = None

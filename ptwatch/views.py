@@ -3,6 +3,7 @@ import deform
 from pyramid.view import view_config
 from pyramid.url import resource_url
 from ptwatch.models import PTWatch, City, Route, RouteMaster, RouteMasters
+from ptwatch.models import allowed_types
 
 @view_config(context=PTWatch, renderer='ptwatch:templates/root.pt')
 def root_view(context, request):
@@ -36,6 +37,10 @@ def route_add(context, request):
         variant = RouteVariantSchema()
 
     class Schema(colander.Schema):
+        type = colander.SchemaNode(
+            colander.String(),
+            widget=deform.widget.SelectWidget(
+                values=[('', '- Select -')] + [(v, v) for v in allowed_types]))
         ref = colander.SchemaNode(
             colander.String(),
             description="Route ref, i.e. '22'")
