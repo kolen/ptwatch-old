@@ -1,7 +1,10 @@
+import re
 import colander
 import deform
+import transaction
 from pyramid.view import view_config
 from pyramid.url import resource_url
+from pyramid.httpexceptions import HTTPFound
 from ptwatch.models import PTWatch, City, Route, RouteMaster, RouteMasters
 from ptwatch.models import allowed_types
 
@@ -11,7 +14,7 @@ def root_view(context, request):
 
 @view_config(context=City, renderer='ptwatch:templates/city.pt')
 def city_view(context, request):
-    route_master_add_url = resource_url(context.route_masters, request,
+    route_master_add_url = resource_url(context, request,
         'add_route_master')
     return dict(city=context, route_master_add_url=route_master_add_url)
 
@@ -64,8 +67,44 @@ def route_add(context, request):
             missing=None)
         variants = VariantsSequence()
 
-    schema = Schema()
-    form = deform.Form(schema, buttons=('submit',))
+    form_schema = Schema()
+    form = deform.Form(form_schema, buttons=('submit',))
     form['variants'].widget = deform.widget.SequenceWidget(min_len=1)
 
-    return dict(form=form.render())
+    if 'submit' in request.POST:
+        controls = request.POST.items()
+        try:
+            struct = form.validate(controls)
+        except deform.ValidationFailure, e:
+            return dict(form=e.render())
+
+        cleaned_ref = re.sub("[^a-zA-Z0-9]", "", struct['ref'])
+        while context.route_masters.has_key(cleaned_ref):
+            try:
+                cleaned_ref_base, cleaned_ref_num = cleaned_ref.split("_")
+            except ValueError:
+                cleaned_ref_base, cleaned_ref_num = cleaned_ref, "0"
+            cleaned_ref_num = str(int(cleaned_ref_num)+1)
+            cleaned_ref = "%s_%s" % (cleaned_ref_base, cleaned_ref_num)
+
+        master = RouteMaster(context.route_masters)
+        master.__name__ = cleaned_ref
+
+        master.ref = struct['ref']
+        master.type = struct['type']
+        master.name = struct['name']
+        master.osm_relation_id = struct['osm_relation_id']
+
+        for v_s in struct['variants']:
+            variant = master.new()
+            variant.name = v_s['name']
+            variant.osm_relation_id = v_s['osm_relation_id']
+            variant.stops = v_s['stops']
+
+        context.route_masters[cleaned_ref] = master
+
+        transaction.commit()
+
+        return HTTPFound(location=resource_url(context, request))
+    else:
+        return dict(form=form.render())

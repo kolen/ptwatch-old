@@ -19,7 +19,7 @@ class City(Persistent):
         self.osm_entities = PersistentList()
         self.route_masters = RouteMasters(self)
 
-class RouteMasters(Persistent):
+class RouteMasters(PersistentMapping):
     def __init__(self, city):
         self.__name__ = "routes"
         self.__parent__ = city
@@ -39,6 +39,7 @@ class RouteMaster(PersistentMapping):
         r = Route(self)
         r.__name__ = self._last
         self[self._last] = r
+        return r
 
 class Route(Persistent):
     def __init__(self, route_master):
