@@ -27,4 +27,7 @@ def main(global_config, **settings):
     psycopg2.extensions.register_type(psycopg2.extensions.UNICODE)
     psycopg2.extensions.register_type(psycopg2.extensions.UNICODEARRAY)
 
+    config.add_subscriber('ptwatch.subscribers.add_base_template',
+                            'pyramid.events.BeforeRender')
+
     return config.make_wsgi_app()
