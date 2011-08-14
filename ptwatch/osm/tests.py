@@ -29,7 +29,7 @@ class TestLoad(TestCase):
     def tearDown(self):
         testing.tearDown()
 
-    def testLoad1(self):
+    def testLoadRoute380499(self):
         rel = pgsimple_loader.load_relation(380499)
 
         self.assertEquals(dict(ref="22", route="bus", type="route"), rel.tags)
@@ -62,3 +62,7 @@ class TestLoad(TestCase):
             "name:ru": u"ул. Красноармейская",
             "trolley_wire": u"yes",
         }, rel.members[0][1].tags)
+
+    def testLoadNotFound(self):
+        self.assertRaises(pgsimple_loader.NotFoundException,
+            pgsimple_loader.load_relation, 278374892734)
