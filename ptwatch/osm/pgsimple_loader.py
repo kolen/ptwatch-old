@@ -95,8 +95,19 @@ def load_relation(id):
         entity = store.get_or_create(m_type, m_id)
         members.append((m_role, entity))
 
-    nodes_ids = set(str(node.id) for node in store.nodes.itervalues())
     ways_ids = set(str(way.id) for way in store.ways.itervalues())
+
+    # Add nodes to ways
+    c.execute("select way_id, node_id from way_nodes"
+        " where way_id in (%s) order by way_id, sequence_id" %
+        (",".join(ways_ids)))
+    for way_id, node_id in c.fetchall():
+        w = store.ways[way_id]
+        if w.nodes is None:
+            w.nodes = []
+        w.nodes.append(store.get_or_create('node', node_id))
+
+    nodes_ids = set(str(node.id) for node in store.nodes.itervalues())
 
     # Load all nodes
     c.execute("select id, ST_Y(geom) lat, ST_X(geom) lon from nodes"
