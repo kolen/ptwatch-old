@@ -54,6 +54,8 @@ class Checker:
         route_type: reference type of route, i.e. 'bus'
         """
         check = Check(osm_relation, stops_reference, route_type)
+        if Checker._check_vintage(check):
+            return check.results
         Checker._get_stops(check)
         Checker._generate_stops_platforms_trails(check)
 
@@ -61,6 +63,14 @@ class Checker:
             c(check)
 
         return check.results
+
+    @staticmethod
+    def _check_vintage(check):
+        for rm in check.osm_relation.members:
+            if rm[0] in ('forward', 'backward'):
+                check.add_error("GENERAL_VINTAGE")
+                return True
+        return False
 
     @staticmethod
     def _get_stops(check):

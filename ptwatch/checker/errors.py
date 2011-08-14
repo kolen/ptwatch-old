@@ -13,6 +13,10 @@ class ErrorMetaclass(type):
 class Error():
     __metaclass__ = ErrorMetaclass
 
+class GeneralVintage(Error):
+    title = "Vintage"
+    severity = "error"
+
 class TopoNoWays(Error):
     title = "No ways"
     severity = "error"
