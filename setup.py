@@ -13,6 +13,8 @@ requires = [
     'repoze.retry',
     'ZODB3',
     'WebError',
+    'psycopg2',
+    'DBUtils',
     ]
 
 setup(name='ptwatch',

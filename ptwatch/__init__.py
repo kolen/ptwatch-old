@@ -1,3 +1,5 @@
+import psycopg2
+from DBUtils.PooledDB import PooledDB
 from pyramid.config import Configurator
 from repoze.zodbconn.finder import PersistentApplicationFinder
 from ptwatch.models import appmaker
@@ -15,4 +17,12 @@ def main(global_config, **settings):
     config = Configurator(root_factory=get_root, settings=settings)
     config.add_static_view('static', 'ptwatch:static')
     config.scan('ptwatch')
+
+    config.registry.osm_db_pool = PooledDB(psycopg2,
+        database=settings.get('osm_db_database', None),
+        user=settings.get('osm_db_user', None),
+        password=settings.get('osm_db_password', None),
+        host=settings.get('osm_db_host', None),
+    )
+
     return config.make_wsgi_app()

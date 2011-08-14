@@ -25,6 +25,8 @@ ptwatch/checker/test/test_check.py
 ptwatch/checker/test/test_parse.py
 ptwatch/osm/__init__.py
 ptwatch/osm/entities.py
+ptwatch/osm/pgsimple_loader.py
+ptwatch/osm/tests.py
 ptwatch/osm/xml_loader.py
 ptwatch/static/favicon.ico
 ptwatch/static/footerbg.png

@@ -4,3 +4,5 @@ repoze.tm2>=1.0b1
 repoze.retry
 ZODB3
 WebError
+psycopg2
+DBUtils
