@@ -5,6 +5,8 @@ from persistent.mapping import PersistentMapping
 
 allowed_types = ['bus', 'trolleybus', 'share_taxi', 'tram']
 
+error_levels = dict(ok=0, notice=1, warning=2, error=3, empty=4)
+
 class PTWatch(PersistentMapping):
     __name__ = None
     __parent__ = None
@@ -42,6 +44,21 @@ class RouteMaster(PersistentMapping):
         r.__name__ = self._last
         self[self._last] = r
         return r
+
+    @property
+    def status(self):
+        return max((route.status for route in self.itervalues()),
+                   key = lambda x: error_levels[x]) or "empty"
+
+    @property
+    def manual_status(self):
+        ms = "checked"
+        for route in self.itervalues():
+            if route.manual_status == "unknown":
+                ms = "unknown"
+            elif route.manual_status == "error":
+                return "error"
+        return ms
 
 class Route(Persistent):
     def __init__(self, route_master):
