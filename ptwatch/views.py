@@ -24,6 +24,10 @@ def city_view(context, request):
     return dict(city=context, route_master_add_url=route_master_add_url,
                 route_masters_by_transport=route_masters_by_transport)
 
+@view_config(context=RouteMaster, renderer='ptwatch:templates/route_master.pt')
+def route_master_view(context, request):
+    return dict(route_master=context)
+
 @view_config(context=Route, renderer='ptwatch:templates/route.pt')
 def route_view(context, request):
     return dict(route=context)
