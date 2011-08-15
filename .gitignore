@@ -1,6 +1,8 @@
 /.pydevproject
 /.project
 /.settings
+/*.komodoproject
+/.komodotools
 /ptwatch.egg-info/*
 *.pyc
 *.pyo
