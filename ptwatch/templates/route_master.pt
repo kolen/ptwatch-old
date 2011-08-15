@@ -1,6 +1,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:tal="http://xml.zope.org/namespaces/tal"
       xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
       metal:use-macro="base">
 
 <tal:block metal:fill-slot="content">
@@ -34,6 +35,17 @@
         <h3 tal:content="route.name or 'Unnamed'" />
     </a>
     Status: <span tal:content="route.status">
+
+    <h3 i18n:translate="">Check messages</h3>
+    <div metal:define-macro="errors" class="check-errors">
+        <img
+            tal:repeat="error route.check_result.errors.itervalues()
+                if route.check_result else []"
+            tal:attributes="src '/static/img/errors/%s.png' % error.name.lower();
+                alt error.name;
+                title error.title;
+                class 'error error-'+error.severity" />
+    </div>
 </div>
 
 </tal:block>
