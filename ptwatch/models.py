@@ -21,6 +21,12 @@ class City(Persistent):
         self.osm_entities = PersistentList()
         self.route_masters = RouteMasters(self)
 
+    def __getitem__(self, key):
+        if key == "routes":
+            return self.route_masters
+        else:
+            raise KeyError()
+
 class RouteMasters(PersistentMapping):
     def __init__(self, city):
         PersistentMapping.__init__(self)
