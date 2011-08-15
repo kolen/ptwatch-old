@@ -4,18 +4,37 @@
       metal:use-macro="base">
 
 <tal:block metal:fill-slot="content">
+<h1>
+    <tal:block i18n:translate="">Route</tal:block>
+    <tal:block tal:content="route_master.ref" />
+    <span class="routename" tal:condition="route_master.name">
+    «<tal:block tal:content="route_master.name" />»
+    </span>
+</h1>
 <table>
 <tbody>
     <tr>
-        <td>Ref</td>
+        <td i18n:translate="">Type of transport</td>
+        <td tal:content="route_master.type" />
+    </tr>
+    <tr>
+        <td i18n:translate="">Ref</td>
         <td tal:content="route_master.ref" />
     </tr>
     <tr>
-        <td>Name</td>
+        <td i18n:translate="">Name</td>
         <td tal:content="route_master.name" />
     </tr>
 </tbody>
 </table>
-<h1 tal:content="route_master.name" />
+
+<h2 i18n:translate="">Route variants</h2>
+<div class="route-variant" tal:repeat="route route_master.itervalues()">
+    <a tal:attributes="href request.resource_url(route)">
+        <h3 tal:content="route.name or 'Unnamed'" />
+    </a>
+    Status: <span tal:content="route.status">
+</div>
+
 </tal:block>
 </html>
