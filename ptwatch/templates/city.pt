@@ -4,10 +4,30 @@
       metal:use-macro="base">
 
 <tal:block metal:fill-slot="content">
-${city.name}
+<h1 tal:content="city.name" />
+<div class="country" tal:content="city.country" />
+
+<tal:block tal:repeat="transport route_masters_by_transport">
+<h2 class="transporttype" tal:condition="transport[1]" tal:content="transport[0]" />
+<div class="route-master-list" tal:condition="transport[1]">
+      <div tal:attributes="class 'route-master status-'+route_master.status" tal:repeat="route_master transport[1]">
+	    <img tal:attributes="src '/static/img/routemaster-manual-status-'+route_master.manual_status" />
+	    <a tal:attributes="href request.resource_url(route_master)">
+		  <span class="ref" tal:content="route_master.ref" />
+	    </a>
+	    <div class="routes">
+		 <img
+		  tal:repeat="route route_master.itervalues()"
+		  tal:attributes="src '/static/img/route-status-'+route.status"
+		  width="8"
+		  height="8" />
+	    </div>
+      </div>
+</div>
+</tal:block>
 
 <a tal:attributes="href route_master_add_url" href="" i18n:translate="">
-	Add new route
+Add new route
 </a>
 </tal:block>
 </html>
