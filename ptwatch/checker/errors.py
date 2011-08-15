@@ -11,6 +11,12 @@ class ErrorMetaclass(type):
         return new_class
 
 class Error():
+    """
+    Check error. Properties:
+     - name: name, i.e. TOPO_BROKEN_ROUTE
+     - title: descriptive title
+     - severity: notice/warning/error
+    """
     __metaclass__ = ErrorMetaclass
 
 class GeneralVintage(Error):
