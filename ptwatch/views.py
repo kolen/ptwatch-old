@@ -16,7 +16,13 @@ def root_view(context, request):
 def city_view(context, request):
     route_master_add_url = resource_url(context, request,
         'add_route_master')
-    return dict(city=context, route_master_add_url=route_master_add_url)
+    route_masters_by_transport = [
+        (type, [route for route in context.route_masters.itervalues()
+            if route.type == type])
+        for type in allowed_types
+    ]
+    return dict(city=context, route_master_add_url=route_master_add_url,
+                route_masters_by_transport=route_masters_by_transport)
 
 @view_config(context=Route, renderer='ptwatch:templates/route.pt')
 def route_view(context, request):
