@@ -6,7 +6,7 @@ from pyramid.view import view_config
 from pyramid.url import resource_url
 from pyramid.httpexceptions import HTTPFound
 from ptwatch.models import PTWatch, City, Route, RouteMaster, RouteMasters
-from ptwatch.models import allowed_types
+from ptwatch.models import allowed_types, DBSession
 
 @view_config(context=PTWatch, renderer='ptwatch:templates/root.pt')
 def root_view(context, request):
@@ -14,15 +14,14 @@ def root_view(context, request):
 
 @view_config(context=City, renderer='ptwatch:templates/city.pt')
 def city_view(context, request):
-    route_master_add_url = resource_url(context, request,
-        'add_route_master')
+    session = DBSession()
+    rms = session.query(RouteMaster).filter_by(city=context.id).all()
+
     route_masters_by_transport = [
-        (type, [route for route in context.route_masters.itervalues()
-            if route.type == type])
+        (type, [rm for rm in rms if rm.type == type])
         for type in allowed_types
     ]
-    return dict(city=context, route_master_add_url=route_master_add_url,
-                route_masters_by_transport=route_masters_by_transport)
+    return dict(city=context, route_masters_by_transport=route_masters_by_transport)
 
 @view_config(context=RouteMaster, renderer='ptwatch:templates/route_master.pt')
 def route_master_view(context, request):
