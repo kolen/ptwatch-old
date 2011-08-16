@@ -2,18 +2,17 @@ import psycopg2
 from DBUtils.PooledDB import PooledDB
 from pyramid.config import Configurator
 from repoze.zodbconn.finder import PersistentApplicationFinder
-from ptwatch.models import appmaker
+from ptwatch.models import get_root
+from sqlalchemy import engine_from_config
+from ptwatch.models import initialize_sql
 
 def main(global_config, **settings):
     """ This function returns a Pyramid WSGI application.
     """
-    zodb_uri = settings.get('zodb_uri', False)
-    if zodb_uri is False:
-        raise ValueError("No 'zodb_uri' in application configuration.")
 
-    finder = PersistentApplicationFinder(zodb_uri, appmaker)
-    def get_root(request):
-        return finder(request.environ)
+    engine = engine_from_config(settings, 'sqlalchemy.')
+    initialize_sql(engine)
+
     config = Configurator(root_factory=get_root, settings=settings)
     config.add_static_view('static', 'ptwatch:static')
     config.scan('ptwatch')

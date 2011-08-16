@@ -8,13 +8,13 @@ CHANGES = open(os.path.join(here, 'CHANGES.txt')).read()
 
 requires = [
     'pyramid',
-    'repoze.zodbconn',
+    'SQLAlchemy',
     'repoze.tm2>=1.0b1', # default_commit_veto
     'repoze.retry',
-    'ZODB3',
     'WebError',
     'psycopg2',
     'DBUtils',
+    'zope.sqlalchemy',
     'colander',
     'deform',
     ]
@@ -45,4 +45,3 @@ setup(name='ptwatch',
       """,
       paster_plugins=['pyramid'],
       )
-

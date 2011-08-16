@@ -1,60 +1,123 @@
-from uuid import uuid4
-from persistent import Persistent
-from persistent.list import PersistentList
-from persistent.mapping import PersistentMapping
+import transaction
+from sqlalchemy import Column, Boolean, Integer, BigInteger, String, Text
+from sqlalchemy.schema import UniqueConstraint, ForeignKey
+from sqlalchemy.exc import IntegrityError
+from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy.orm import scoped_session
+from sqlalchemy.orm import sessionmaker
+from sqlalchemy.orm import relationship, backref
+from zope.sqlalchemy import ZopeTransactionExtension
 
 allowed_types = ['bus', 'trolleybus', 'share_taxi', 'tram']
 
 error_levels = dict(ok=0, notice=1, warning=2, error=3, empty=4)
 
-class PTWatch(PersistentMapping):
+DBSession = scoped_session(sessionmaker(extension=ZopeTransactionExtension()))
+Base = declarative_base()
+
+_root_ptwatch = None
+
+def _keyerror_if_none(f):
+    def wrap(self, item):
+        ret = f(self, item)
+        if ret is None:
+            raise KeyError()
+        else:
+            return ret
+    return wrap
+
+class PTWatch(dict):
     __name__ = None
     __parent__ = None
 
-class Cities(PersistentMapping):
-    pass
-
-class City(Persistent):
     def __init__(self):
-        self.name = ""
-        self.country = ""
-        self.osm_entities = PersistentList()
-        self.route_masters = RouteMasters(self)
+        self['cities'] = Cities()
+        self['cities'].__parent__ = self
+
+class Cities():
+    __name__ = "cities"
+
+    @_keyerror_if_none
+    def __getitem__(self, item):
+        session = DBSession()
+        return session.query(City).filter_by(urlname=item).first()
+
+class City(Base):
+    __tablename__ = 'cities'
+
+    id = Column(Integer, primary_key=True)
+    name = Column(String, index=True)
+    country = Column(String, index=True)
+    urlname = Column(String)
+
+    @property
+    def __name__(self):
+        return self.urlname
+
+    @property
+    def __parent__(self):
+        return get_root()['cities']
 
     def __getitem__(self, key):
-        if key == "routes":
-            return self.route_masters
+        if key in allowed_types:
+            if getattr(self, "route_masters", None):
+                self.route_masters = {}
+                if not self.route_masters.has_key(key):
+                    self.route_masters[key] = RouteMasters(key, self)
+            return self.route_masters[key]
         else:
             raise KeyError()
 
-class RouteMasters(PersistentMapping):
-    def __init__(self, city):
-        PersistentMapping.__init__(self)
-        self.__name__ = "routes"
+class RouteMasters():
+    """
+    Route masters by transport type
+    """
+    def __init__(self, type, city):
+        self.__name__ = type # Name is also type
         self.__parent__ = city
 
-class RouteMaster(PersistentMapping):
-    def __init__(self, routemasters):
-        PersistentMapping.__init__(self)
-        self._last = 0
-        self.__parent__ = routemasters
+    @_keyerror_if_none
+    def __getitem__(self, name):
+        session = DBSession.object_session(self.__parent__)
+        return session.query(RouteMaster).filter_by(type=self.__name__,
+            city=self.__parent__.id).first()
 
-        self.osm_relation_id = None  # OSM relation id (type=route_master)
-        self.ref = ""
-        self.name = "" # Name, i.e. "Tarkhanovo - Turunovo"
-        self.type = "" # Type, i.e. bus
+class RouteMaster(Base):
+    __tablename__ = 'route_masters'
+    __table_args__ = (UniqueConstraint('city', 'type', 'ref'),)
 
-    def new(self):
-        self._last += 1
-        r = Route(self)
-        r.__name__ = self._last
-        self[self._last] = r
-        return r
+    id = Column(Integer, primary_key=True)
+    city = Column(Integer, ForeignKey("cities.id"))
+    osm_relation_id = Column(BigInteger, nullable=True)
+    type = Column(String(16))
+    ref = Column(String(16))
+    name = Column(String)
+
+    routes = relationship("Route")
+
+    @property
+    def __parent__(self):
+        return self.city[self.type]
+
+    @property
+    def __name__(self):
+        return self.name
 
     @property
     def status(self):
         return max((route.status for route in self.itervalues()),
                    key = lambda x: error_levels[x]) or "empty"
+
+    def __getitem__(self, item):
+        try:
+            i = int(item)
+            route = self.routes[i]
+        except (IndexError, ValueError):
+            raise KeyError()
+
+        route.__parent__ = self
+        route.__name__ = str(i)
+        return route
 
     @property
     def manual_status(self):
@@ -66,37 +129,52 @@ class RouteMaster(PersistentMapping):
                 return "error"
         return ms
 
-class Route(Persistent):
-    def __init__(self, route_master):
-        Persistent.__init__(self)
-        self.__parent__ = route_master
+class Route(Base):
+    __tablename__ = "routes"
 
-        self.osm_relation_id = None  # OSM relation id (type=route)
-        self.ref = "" # Ref, i.e. "22"
-        self.name = "" # Name, i.e. "Tarkhanovo - Turunovo"
-        self.stops = [] # Stops reference
+    id = Column(Integer, primary_key=True)
+    route_master = Column(Integer, ForeignKey("route_masters.id"))
+    osm_relation_id = Column(BigInteger, nullable=True)
+    type = Column(String)
+    ref = Column(String(16))
+    name = Column(String)
 
-        self.check_result = None
-        self.status = "empty" # empty, vintage, notice, warning, error
-        self.manual_status = "unknown" # unknown, checked, error
-        self.relation_not_found = False
+    status = Column(String(8), default="empty")
+    # empty, vintage, notice, warning, error
+    manual_status = Column(String(8), default="unknown")
+    # unknown, checked, error
+    relation_not_found = Column(Boolean, default=False)
 
-def appmaker(zodb_root):
-    if not 'app_root' in zodb_root:
-        app_root = PTWatch()
-        cities = Cities()
-        cities.__name__ = 'cities'
-        cities.__parent__ = app_root
-        app_root['cities'] = cities
-        zodb_root['app_root'] = app_root
+    stops = Column(Text, nullable=True)
 
-        c = City()
-        c.name = "Test City"
-        c.country = "Inner Nepal"
-        c.__parent__ = cities
-        c.__name__ = "Test City"
-        cities["Test City"] = c
+    @property
+    def __name__(self):
+        i = 0
+        for r in self.route_master.routes:
+            i += 1
+            if r.id == self.id:
+                return str(i)
 
-        import transaction
-        transaction.commit()
-    return zodb_root['app_root']
+    @property
+    def __parent__(self):
+        return self.route_master
+
+def get_root(request=None):
+    global _root_ptwatch
+    if not _root_ptwatch:
+        _root_ptwatch = PTWatch()
+    return _root_ptwatch
+
+def initialize_sql(engine):
+    DBSession.configure(bind=engine)
+    Base.metadata.bind = engine
+    Base.metadata.create_all(engine)
+    #try:
+    #    transaction.begin()
+    #    session = DBSession()
+    #    page = Page('FrontPage', 'This is the front page')
+    #    session.add(page)
+    #    transaction.commit()
+    #except IntegrityError:
+    #    # already created
+    #    transaction.abort()
