@@ -1,4 +1,5 @@
 import transaction
+import UserDict
 from sqlalchemy import Column, Boolean, Integer, BigInteger, String, Text
 from sqlalchemy.schema import UniqueConstraint, ForeignKey
 from sqlalchemy.exc import IntegrityError
@@ -42,7 +43,7 @@ class Cities():
         session = DBSession()
         return session.query(City).filter_by(urlname=item).first()
 
-class City(Base):
+class City(Base, UserDict.DictMixin):
     __tablename__ = 'cities'
 
     id = Column(Integer, primary_key=True)
@@ -60,13 +61,16 @@ class City(Base):
 
     def __getitem__(self, key):
         if key in allowed_types:
-            if getattr(self, "route_masters", None):
+            if not getattr(self, "route_masters", None):
                 self.route_masters = {}
-                if not self.route_masters.has_key(key):
-                    self.route_masters[key] = RouteMasters(key, self)
+            if not self.route_masters.has_key(key):
+                self.route_masters[key] = RouteMasters(key, self)
             return self.route_masters[key]
         else:
             raise KeyError()
+
+    def keys(self):
+        return list(allowed_types)
 
 class RouteMasters():
     """
@@ -111,6 +115,7 @@ class RouteMaster(Base):
     def __getitem__(self, item):
         try:
             i = int(item)
+            i += 1
             route = self.routes[i]
         except (IndexError, ValueError):
             raise KeyError()
