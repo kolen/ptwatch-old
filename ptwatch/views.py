@@ -6,7 +6,7 @@ from pyramid.view import view_config
 from pyramid.url import resource_url
 from pyramid.httpexceptions import HTTPFound
 from ptwatch.models import PTWatch, City, Route, RouteMaster, RouteMasters
-from ptwatch.models import allowed_types, DBSession
+from ptwatch.models import allowed_types, DBSession, IntegrityError
 
 @view_config(context=PTWatch, renderer='ptwatch:templates/root.pt')
 def root_view(context, request):
@@ -76,7 +76,16 @@ def route_add(context, request):
             missing=None)
         variants = VariantsSequence()
 
-    form_schema = Schema()
+    def validator(form, value):
+        session = DBSession()
+        if session.query(RouteMaster).filter_by(ref=value['ref'],
+                city=context.id, type=value['type']).count() != 0:
+            t = 'Route with this ref and type already exists'
+            exc = colander.Invalid(form, t)
+            exc['ref'] = t
+            raise exc
+
+    form_schema = Schema(validator=validator)
     form = deform.Form(form_schema, buttons=('submit',))
     form['variants'].widget = deform.widget.SequenceWidget(min_len=1)
 
@@ -87,31 +96,25 @@ def route_add(context, request):
         except deform.ValidationFailure, e:
             return dict(form=e.render())
 
-        cleaned_ref = re.sub("[^a-zA-Z0-9]", "", struct['ref'])
-        while context.route_masters.has_key(cleaned_ref):
-            try:
-                cleaned_ref_base, cleaned_ref_num = cleaned_ref.split("_")
-            except ValueError:
-                cleaned_ref_base, cleaned_ref_num = cleaned_ref, "0"
-            cleaned_ref_num = str(int(cleaned_ref_num)+1)
-            cleaned_ref = "%s_%s" % (cleaned_ref_base, cleaned_ref_num)
+        session = DBSession()
 
-        master = RouteMaster(context.route_masters)
-        master.__name__ = cleaned_ref
-
+        master = RouteMaster()
+        master.city = context.id
         master.ref = struct['ref']
         master.type = struct['type']
         master.name = struct['name']
         master.osm_relation_id = struct['osm_relation_id']
 
         for v_s in struct['variants']:
-            variant = master.new()
+            variant = Route()
             variant.name = v_s['name']
             variant.osm_relation_id = v_s['osm_relation_id']
             variant.stops = v_s['stops']
+            master.routes.append(variant)
 
-        context.route_masters[cleaned_ref] = master
+        context.route_masters.append(master)
 
+        session.flush()
         transaction.commit()
 
         return HTTPFound(location=resource_url(context, request))
