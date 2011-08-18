@@ -65,11 +65,11 @@ class City(Base, UserDict.DictMixin):
 
     def __getitem__(self, key):
         if key in allowed_types:
-            if not getattr(self, "route_masters", None):
-                self.route_masters = {}
-            if not self.route_masters.has_key(key):
-                self.route_masters[key] = RouteMasters(key, self)
-            return self.route_masters[key]
+            if not getattr(self, "_keys", None):
+                self._keys = {}
+            if not self._keys.has_key(key):
+                self._keys[key] = RouteMasters(key, self)
+            return self._keys[key]
         else:
             raise KeyError()
 
