@@ -88,7 +88,7 @@ class RouteMasters():
     def __getitem__(self, name):
         session = DBSession.object_session(self.__parent__)
         return session.query(RouteMaster).filter_by(type=self.__name__,
-            city=self.__parent__.id).first()
+            city=self.__parent__).first()
 
 class RouteMaster(Base, UserDict.DictMixin):
     __tablename__ = 'route_masters'
