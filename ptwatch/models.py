@@ -14,7 +14,8 @@ allowed_types = ['bus', 'trolleybus', 'share_taxi', 'tram']
 
 error_levels = dict(ok=0, notice=1, warning=2, error=3, empty=4)
 
-DBSession = scoped_session(sessionmaker(extension=ZopeTransactionExtension()))
+DBSession = scoped_session(sessionmaker(extension=ZopeTransactionExtension(),
+                                        expire_on_commit=False))
 Base = declarative_base()
 
 _root_ptwatch = None
@@ -52,7 +53,7 @@ class City(Base, UserDict.DictMixin):
     country = Column(String, index=True)
     urlname = Column(String)
 
-    route_masters = relationship("RouteMaster")
+    route_masters = relationship("RouteMaster", backref="city")
 
     @property
     def __name__(self):
@@ -91,10 +92,10 @@ class RouteMasters():
 
 class RouteMaster(Base, UserDict.DictMixin):
     __tablename__ = 'route_masters'
-    __table_args__ = (UniqueConstraint('city', 'type', 'ref'),)
+    __table_args__ = (UniqueConstraint('city_id', 'type', 'ref'),)
 
     id = Column(Integer, primary_key=True)
-    city = Column(Integer, ForeignKey("cities.id"))
+    city_id = Column(Integer, ForeignKey("cities.id"))
     osm_relation_id = Column(BigInteger, nullable=True)
     type = Column(String(16))
     ref = Column(String(16))
@@ -142,7 +143,7 @@ class Route(Base):
     __tablename__ = "routes"
 
     id = Column(Integer, primary_key=True)
-    route_master = Column(Integer, ForeignKey("route_masters.id"))
+    route_master_id = Column(Integer, ForeignKey("route_masters.id"))
     osm_relation_id = Column(BigInteger, nullable=True)
     type = Column(String)
     ref = Column(String(16))
@@ -182,12 +183,15 @@ def initialize_sql(engine):
     DBSession.configure(bind=engine)
     Base.metadata.bind = engine
     Base.metadata.create_all(engine)
-    #try:
-    #    transaction.begin()
-    #    session = DBSession()
-    #    page = Page('FrontPage', 'This is the front page')
-    #    session.add(page)
-    #    transaction.commit()
-    #except IntegrityError:
-    #    # already created
-    #    transaction.abort()
+    try:
+        transaction.begin()
+        session = DBSession()
+        city = City()
+        city.name = "Yoshkar-Ola"
+        city.country = "Russia"
+        city.urlname = "Yoshkar-Ola"
+        session.add(city)
+        transaction.commit()
+    except IntegrityError:
+        # already created
+        transaction.abort()

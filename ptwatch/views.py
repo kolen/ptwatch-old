@@ -15,7 +15,7 @@ def root_view(context, request):
 @view_config(context=City, renderer='ptwatch:templates/city.pt')
 def city_view(context, request):
     session = DBSession()
-    rms = session.query(RouteMaster).filter_by(city=context.id).all()
+    rms = session.query(RouteMaster).filter_by(city=context).all()
 
     route_masters_by_transport = [
         (type, [rm for rm in rms if rm.type == type])
@@ -79,7 +79,7 @@ def route_add(context, request):
     def validator(form, value):
         session = DBSession()
         if session.query(RouteMaster).filter_by(ref=value['ref'],
-                city=context.id, type=value['type']).count() != 0:
+                city=context, type=value['type']).count() != 0:
             t = 'Route with this ref and type already exists'
             exc = colander.Invalid(form, t)
             exc['ref'] = t
@@ -99,7 +99,7 @@ def route_add(context, request):
         session = DBSession()
 
         master = RouteMaster()
-        master.city = context.id
+        master.city = context
         master.ref = struct['ref']
         master.type = struct['type']
         master.name = struct['name']
