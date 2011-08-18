@@ -7,6 +7,7 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import scoped_session
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.orm import relationship, backref
+from sqlalchemy.exc import IntegrityError
 from zope.sqlalchemy import ZopeTransactionExtension
 
 allowed_types = ['bus', 'trolleybus', 'share_taxi', 'tram']
@@ -51,6 +52,8 @@ class City(Base, UserDict.DictMixin):
     country = Column(String, index=True)
     urlname = Column(String)
 
+    route_masters = relationship("RouteMaster")
+
     @property
     def __name__(self):
         return self.urlname
@@ -86,7 +89,7 @@ class RouteMasters():
         return session.query(RouteMaster).filter_by(type=self.__name__,
             city=self.__parent__.id).first()
 
-class RouteMaster(Base):
+class RouteMaster(Base, UserDict.DictMixin):
     __tablename__ = 'route_masters'
     __table_args__ = (UniqueConstraint('city', 'type', 'ref'),)
 
@@ -98,6 +101,9 @@ class RouteMaster(Base):
     name = Column(String)
 
     routes = relationship("Route")
+
+    def keys(self):
+        return range(1, len(self.routes) + 1)
 
     @property
     def __parent__(self):
@@ -115,13 +121,11 @@ class RouteMaster(Base):
     def __getitem__(self, item):
         try:
             i = int(item)
-            i += 1
-            route = self.routes[i]
+            route = self.routes[i-1]
         except (IndexError, ValueError):
             raise KeyError()
 
-        route.__parent__ = self
-        route.__name__ = str(i)
+        route._name = str(i)
         return route
 
     @property
@@ -154,11 +158,15 @@ class Route(Base):
 
     @property
     def __name__(self):
-        i = 0
-        for r in self.route_master.routes:
-            i += 1
-            if r.id == self.id:
-                return str(i)
+        if not getattr(self, "_name", None):
+            i = 0
+            for r in self.route_master.routes:
+                i += 1
+                if r.id == self.id:
+                    self._name = str(i)
+                    break
+
+        return self._name
 
     @property
     def __parent__(self):
