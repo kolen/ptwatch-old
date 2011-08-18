@@ -38,6 +38,7 @@
 
     <h3 i18n:translate="">Check messages</h3>
     <div metal:define-macro="errors" class="check-errors">
+    <!--
         <img
             tal:repeat="error route.check_result.errors.itervalues()
                 if route.check_result else []"
@@ -45,6 +46,7 @@
                 alt error.name;
                 title error.title;
                 class 'error error-'+error.severity" />
+    -->
     </div>
 </div>
 
