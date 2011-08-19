@@ -112,7 +112,7 @@ class RouteMaster(Base, UserDict.DictMixin):
 
     @property
     def __name__(self):
-        return self.name
+        return self.ref
 
     @property
     def status(self):
