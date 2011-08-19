@@ -51,7 +51,7 @@ class City(Base, UserDict.DictMixin):
     id = Column(Integer, primary_key=True)
     name = Column(String, index=True)
     country = Column(String, index=True)
-    urlname = Column(String)
+    urlname = Column(String, unique=True)
 
     route_masters = relationship("RouteMaster", backref="city")
 
