@@ -1,7 +1,6 @@
 import psycopg2
 from DBUtils.PooledDB import PooledDB
 from pyramid.config import Configurator
-from repoze.zodbconn.finder import PersistentApplicationFinder
 from ptwatch.models import get_root
 from sqlalchemy import engine_from_config
 from ptwatch.models import initialize_sql
